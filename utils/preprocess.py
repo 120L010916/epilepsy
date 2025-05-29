@@ -136,7 +136,11 @@ def process_edf(file_path: str,
             idx = signal_labels.index(ch)
             channel_indices.append(idx)
             seen.add(ch)
-
+    
+    if not channel_indices:
+        print(f"未找到指定的通道: {target_channels} 在文件 {file_path} 中。")
+        return []
+    
     total_samples = f.getNSamples()[0]
    
     # 获取标签
@@ -191,7 +195,7 @@ def main(args):
     window_size = args.window_size * fs
     pre_ictal_window = args.pre_ictal_window * 60
 
-    for pid_num in range(1, 24):  # chb01 到 chb23
+    for pid_num in range(12, 24):  # chb01 到 chb23
         patient_id = f"chb{pid_num:02d}"
         patient_path = os.path.join(args.root, patient_id)
         summary_path = os.path.join(patient_path, f"{patient_id}-summary.txt")

@@ -6,10 +6,10 @@
     "configurations": [
 
         {
-      "name": "Debug preprocessing.py",
+      "name": "Debug preprocess.py",
       "type": "python",
       "request": "launch",
-      "program": "${workspaceFolder}/utils/preprocessing.py",
+      "program": "${workspaceFolder}/utils/preprocess.py",
       "console": "integratedTerminal",
       "justMyCode": true,
       "cwd": "${workspaceFolder}",
