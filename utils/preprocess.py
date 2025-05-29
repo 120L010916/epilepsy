@@ -18,36 +18,53 @@ def butter_bandpass_filter(data, lowcut=5.0, highcut=50.0, fs=256.0, order=5):
 
 def read_annotations(summary_path: str) -> Tuple[List[Tuple[str, int, int]], Dict[str, Tuple[str, str]]]:
     """
-    解析 seizure summary 文件，提取：
-    1. seizures: List of (record_name, seizure_start_seconds, seizure_end_seconds)
-    2. file_time_ranges: Dict of record_name -> (start_time_str, end_time_str)
+    Parse CHB-MIT style seizure summary.
+
+    Returns:
+    - seizures: list of (record, start_time_sec, end_time_sec)
+    - file_time_ranges: dict of record_name -> (start_time_str, end_time_str)
     """
     seizures = []
     file_time_ranges = {}
 
-    with open(summary_path, 'r') as f:
+    with open(summary_path, "r") as f:
         lines = f.readlines()
 
     current_record = None
+    seizure_starts = []
+    seizure_ends = []
+
     for line in lines:
         line = line.strip()
-        if line.startswith("File Name:"):
+
+        if "File Name" in line:
             current_record = line.split(":", 1)[1].strip()
-        elif line.startswith("File Start Time:"):
+            seizure_starts.clear()
+            seizure_ends.clear()
+
+        elif "File Start Time" in line:
             start_time = line.split(":", 1)[1].strip()
-        elif line.startswith("File End Time:"):
+
+        elif "File End Time" in line:
             end_time = line.split(":", 1)[1].strip()
-            # 在读取完结束时间之后就可以记录当前文件的时间范围
-            if current_record:
-                file_time_ranges[current_record] = (start_time, end_time)
-        elif line.startswith("Seizure Start Time:"):
-            seizure_start = int(re.search(r"\d+", line).group())
-        elif line.startswith("Seizure End Time:"):
-            seizure_end = int(re.search(r"\d+", line).group())
-            if current_record:
-                seizures.append((current_record, seizure_start, seizure_end))
+            file_time_ranges[current_record] = (start_time, end_time)
+
+        elif "Seizure" in line and "Start Time" in line:
+            match = re.search(r"(\d+)\s*seconds", line)
+            if match:
+                seizure_starts.append(int(match.group(1)))
+
+        elif "Seizure" in line and "End Time" in line:
+            match = re.search(r"(\d+)\s*seconds", line)
+            if match:
+                seizure_ends.append(int(match.group(1)))
+
+            if current_record and len(seizure_starts) == len(seizure_ends):
+                seizures.append((current_record, seizure_starts[-1], seizure_ends[-1]))
 
     return seizures, file_time_ranges
+
+
 
 from typing import Generator, List, Tuple, Dict
 import numpy as np
@@ -195,7 +212,7 @@ def main(args):
     window_size = args.window_size * fs
     pre_ictal_window = args.pre_ictal_window * 60
 
-    for pid_num in range(12, 24):  # chb01 到 chb23
+    for pid_num in range(6, 24):  # chb01 到 chb23
         patient_id = f"chb{pid_num:02d}"
         patient_path = os.path.join(args.root, patient_id)
         summary_path = os.path.join(patient_path, f"{patient_id}-summary.txt")
@@ -267,7 +284,7 @@ def main(args):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Process EEG data and generate segments with labels.")
-    parser.add_argument('--root', type=str, default='data/raw/chbmit_dataset', help='Root directory of the dataset')
+    parser.add_argument('--root', type=str, default='data/raw/', help='Root directory of the dataset')
    
     parser.add_argument('--fs', type=int, default=256, help='Sampling frequency in Hz')
     parser.add_argument('--window_size', type=int, default=5, help='Window size in seconds')

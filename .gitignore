@@ -2,3 +2,4 @@
 *.edf
 *.edf.seizures
 *.npz
+*.edf.*
