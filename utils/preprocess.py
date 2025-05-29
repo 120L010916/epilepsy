@@ -102,7 +102,11 @@ def label_segments(record_name: str,
                     yield (prev_name, prev_start_win, prev_num_windows)
                 else:
                     # 时间断裂过大，无法补充
-                    pass  # 可以打印日志或记录信息
+                    print(f"⛔ 时间断裂过大，跳过补偿：")
+                    print(f"   当前记录: {record_name} 开始于 {current_start}")
+                    print(f"   上一记录: {prev_name} 结束于 {prev_end}")
+                    print(f"   时间间隔: {time_gap:.2f} 秒（超过阈值 {broken_window} 秒）")
+                    
 
     yield (record_name, labels)
 
