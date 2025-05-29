@@ -16,24 +16,38 @@ def butter_bandpass_filter(data, lowcut=5.0, highcut=50.0, fs=256.0, order=5):
     b, a = butter(order, [lowcut/nyq, highcut/nyq], btype='band')
     return filtfilt(b, a, data)
 
-def read_annotations(summary_path):
+def read_annotations(summary_path: str) -> Tuple[List[Tuple[str, int, int]], Dict[str, Tuple[str, str]]]:
     """
-    解析 seizure summary 文件
-    返回 seizure 的记录名、开始时间、结束时间
+    解析 seizure summary 文件，提取：
+    1. seizures: List of (record_name, seizure_start_seconds, seizure_end_seconds)
+    2. file_time_ranges: Dict of record_name -> (start_time_str, end_time_str)
     """
     seizures = []
+    file_time_ranges = {}
+
     with open(summary_path, 'r') as f:
         lines = f.readlines()
+
     current_record = None
     for line in lines:
-        if "File Name" in line:
-            current_record = line.split(":")[1].strip()
-        elif "Seizure Start Time" in line:
-            start = int(re.search(r"\d+", line).group())
-        elif "Seizure End Time" in line:
-            end = int(re.search(r"\d+", line).group())
-            seizures.append((current_record, start, end))
-    return seizures
+        line = line.strip()
+        if line.startswith("File Name:"):
+            current_record = line.split(":", 1)[1].strip()
+        elif line.startswith("File Start Time:"):
+            start_time = line.split(":", 1)[1].strip()
+        elif line.startswith("File End Time:"):
+            end_time = line.split(":", 1)[1].strip()
+            # 在读取完结束时间之后就可以记录当前文件的时间范围
+            if current_record:
+                file_time_ranges[current_record] = (start_time, end_time)
+        elif line.startswith("Seizure Start Time:"):
+            seizure_start = int(re.search(r"\d+", line).group())
+        elif line.startswith("Seizure End Time:"):
+            seizure_end = int(re.search(r"\d+", line).group())
+            if current_record:
+                seizures.append((current_record, seizure_start, seizure_end))
+
+    return seizures, file_time_ranges
 
 from typing import Generator, List, Tuple, Dict
 import numpy as np
@@ -185,7 +199,12 @@ def main(args):
         print(f"\n🚀 正在处理 {patient_id}...")
 
         # 读取癫痫发作标注,返回记录名、开始时间、结束时间
-        seizure_info = read_annotations(summary_path)
+        seizure_info, file_time_ranges = read_annotations(summary_path)
+        edf_start_times = {}
+        for record_name, (start_time_str, _) in file_time_ranges.items():
+            # 假设日期统一使用默认日期（1900-01-01），仅用于时间差计算
+            start_dt = datetime.strptime(start_time_str, "%H:%M:%S")
+            edf_start_times[record_name] = start_dt
         # 获得每个edf文件的持续时间
         edf_files = sorted([f for f in os.listdir(patient_path) if f.endswith('.edf')])
         edf_durations = {}
@@ -207,7 +226,7 @@ def main(args):
         label_map = {}
         for file in edf_files:
             seizures = [(name, s, e) for (name, s, e) in seizure_info if name == file]
-            for result in label_segments(file, edf_durations[file], seizures, edf_durations, window_size, pre_ictal_window):
+            for result in label_segments(file, edf_durations[file], seizures, edf_durations, edf_start_times, window_size, pre_ictal_window):
                 if isinstance(result[1], np.ndarray):
                     label_map[result[0]] = result[1]
                 else:
