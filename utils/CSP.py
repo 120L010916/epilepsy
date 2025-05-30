@@ -24,15 +24,19 @@ def compute_covariance(trial):
 # CSP: compute projection matrix
 # ---------------------
 def csp(X1, X2, m=2):
+    # 计算每个样本的协方差矩阵；对所有样本求平均，得到两个类别的平均协方差矩阵 C1, C2；
     C1 = np.mean([compute_covariance(x) for x in X1], axis=0)
     C2 = np.mean([compute_covariance(x) for x in X2], axis=0)
     Cc = C1 + C2
+    # 对 Cc 做特征分解（对称矩阵 → eigh）； 构造白化矩阵 P：使得 P @ Cc @ P.T ≈ I（单位矩阵）；
+    # 白化的目的是消除不同通道间的线性相关性。
     eigvals, U = eigh(Cc)
     P = U @ np.diag(1.0 / np.sqrt(eigvals)) @ U.T
     S1 = P @ C1 @ P.T
     eigvals_s1, B = eigh(S1)
     W = B.T @ P
-    return W[np.r_[0:m, -m:], :]  # 前后各 m 行
+    W = np.concatenate((W[:m], W[-m:]), axis=0)
+    return  W
 
 # ---------------------
 # Extract features for one EEG trial
@@ -51,7 +55,7 @@ def extract_feature_matrix(trial, csp_filters_list):
             var_norm = np.log(var / np.sum(var))
             band_features.append(var_norm)
         features.append(np.concatenate(band_features))
-    return np.vstack(features)  # shape: (18, 18)
+    return np.vstack(features)  # shape: (2, 36)
 
 # ---------------------
 # Process one file
@@ -64,9 +68,10 @@ def process_file(input_path, output_path):
 
     print(f"📊 正在训练 CSP filters（pre={len(X_pre)}, inter={len(X_inter)})")
     csp_filters_list = []
+    # 对原始数据进行小波包分解，提取 9 个频带
     for band_idx in range(9):
         def extract_band(X):
-            return np.array([wavelet_packet_decompose(x, level=3)[band_idx] if band_idx > 0 else x for x in X])
+            return np.array([wavelet_packet_decompose(x, level=3)[band_idx-1] if band_idx > 0 else x for x in X])
         band_pre = extract_band(X_pre)
         band_inter = extract_band(X_inter)
         W = csp(band_pre, band_inter, m=2)
@@ -76,7 +81,7 @@ def process_file(input_path, output_path):
     F = np.array([extract_feature_matrix(x, csp_filters_list) for x in X], dtype=np.float32)
 
     os.makedirs(output_path, exist_ok=True)
-    save_name = os.path.basename(input_path).replace('_segments_augmented.npz', '_features.npz')
+    save_name = os.path.basename(input_path).replace('_segments_augmented.npz', 'features.npz')
     np.savez_compressed(os.path.join(output_path, save_name), F=F, y=y)
     print(f"✅ 已保存特征到 {save_name}，shape={F.shape}")
 
@@ -88,7 +93,7 @@ def main(args):
     output_root = args.output_dir
 
     for patient_id in sorted(os.listdir(input_root)):
-        input_file = os.path.join(input_root, patient_id, f"{patient_id}_segments_augmented.npz")
+        input_file = os.path.join(input_root, patient_id, f"_segments_augmented.npz")
         if not os.path.exists(input_file):
             print(f"⚠️ 文件缺失：{input_file}")
             continue

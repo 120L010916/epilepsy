@@ -5,24 +5,22 @@ import torch.nn.functional as F
 class SeizureCNN(nn.Module):
     def __init__(self):
         super(SeizureCNN, self).__init__()
-        # 输入维度应为特征矩阵大小：例如 [batch_size, 1, 18, 18]
-        self.conv1 = nn.Conv2d(in_channels=1, out_channels=6, kernel_size=3, stride=1, padding=1)
-        self.pool = nn.MaxPool2d(kernel_size=2, stride=2)
+        self.conv1 = nn.Conv2d(1, 6, kernel_size=3, stride=1, padding=1)  # Input: [B, 1, 2, 36]
+        self.pool = nn.MaxPool2d(kernel_size=(1, 2))  # 更合理地只在频段方向池化
         self.dropout1 = nn.Dropout(0.5)
-        
-        self.conv2 = nn.Conv2d(in_channels=6, out_channels=16, kernel_size=3, stride=1, padding=1)
+
+        self.conv2 = nn.Conv2d(6, 16, kernel_size=3, stride=1, padding=1)
         self.dropout2 = nn.Dropout(0.5)
-        
-        # 展平后特征维度：16个通道，feature map 大小为 4x4 （取决于输入维度）
-        self.fc1 = nn.Linear(16 * 4 * 4, 84)
-        self.fc2 = nn.Linear(84, 2)  # 二分类：pre-ictal 和 inter-ictal
+
+        self.fc1 = nn.Linear(16 * 2 * 9, 84)  # 根据池化后实际尺寸来修改
+        self.fc2 = nn.Linear(84, 2)
 
     def forward(self, x):
-        x = self.pool(F.leaky_relu(self.conv1(x)))
+        x = self.pool(F.leaky_relu(self.conv1(x)))  # shape: [B, 6, 2, 18]
         x = self.dropout1(x)
-        x = self.pool(F.leaky_relu(self.conv2(x)))
+        x = self.pool(F.leaky_relu(self.conv2(x)))  # shape: [B, 16, 2, 9]
         x = self.dropout2(x)
-        x = x.view(x.size(0), -1)  # 展平
+        x = x.view(x.size(0), -1)  # 展平 → B × (16*2*9)
         x = torch.sigmoid(self.fc1(x))
         x = F.softmax(self.fc2(x), dim=1)
         return x
