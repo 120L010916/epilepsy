@@ -77,7 +77,7 @@ def main(args):
     base_input = args.input_dir  # 保留初始输入路径
     base_output = args.output_dir  # 保留初始输出路径
 
-    for pid_num in range(6, 24):
+    for pid_num in range(1, 24):
         patient_id = f"chb{pid_num:02d}"
         input_file = os.path.join(base_input, f"{patient_id}_segments.npz")
         output_dir = os.path.join(base_output, patient_id)

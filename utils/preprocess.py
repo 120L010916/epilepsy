@@ -3,11 +3,11 @@ import numpy as np
 import pyedflib
 from scipy.signal import butter, filtfilt
 from datetime import timedelta
-import json
 import re
 from collections import defaultdict
 import argparse
 from typing import List, Tuple, Dict, Generator
+from datetime import datetime
 
 
 # 五阶巴特沃斯带通滤波器
@@ -63,12 +63,6 @@ def read_annotations(summary_path: str) -> Tuple[List[Tuple[str, int, int]], Dic
                 seizures.append((current_record, seizure_starts[-1], seizure_ends[-1]))
 
     return seizures, file_time_ranges
-
-
-
-from typing import Generator, List, Tuple, Dict
-import numpy as np
-from datetime import datetime
 
 def label_segments(record_name: str,
                    total_duration: float,
@@ -126,8 +120,6 @@ def label_segments(record_name: str,
                     
 
     yield (record_name, labels)
-
-
 
 def process_edf(file_path: str,
                 seizure_times: List[Tuple[str, int, int]],
@@ -187,7 +179,6 @@ def process_edf(file_path: str,
             segments.append((segment, labels[i]))
     return segments
 
-
 def save_patient_data(patient_id: str, segments: List[Tuple[np.ndarray, int]], save_dir: str = "data/processed"):
     """
     保存某个患者的所有 EEG 段及对应标签为 .npz 文件。
@@ -212,7 +203,7 @@ def main(args):
     window_size = args.window_size * fs
     pre_ictal_window = args.pre_ictal_window * 60
 
-    for pid_num in range(6, 24):  # chb01 到 chb23
+    for pid_num in range(1, 24):  # chb01 到 chb23
         patient_id = f"chb{pid_num:02d}"
         patient_path = os.path.join(args.root, patient_id)
         summary_path = os.path.join(patient_path, f"{patient_id}-summary.txt")
