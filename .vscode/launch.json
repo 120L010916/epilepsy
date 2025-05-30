@@ -16,10 +16,10 @@
           "cwd": "${workspaceFolder}",
         },
         {
-          "name": "Debug preprocess.py",
+          "name": "Debug train.py",
           "type": "python",
           "request": "launch",
-          "program": "${workspaceFolder}/utils/preprocess.py",
+          "program": "${workspaceFolder}/train.py",
           "console": "integratedTerminal",
           "justMyCode": true,
           "cwd": "${workspaceFolder}",
