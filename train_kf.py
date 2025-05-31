@@ -8,18 +8,9 @@ from sklearn.model_selection import KFold
 from torch.utils.data import TensorDataset, DataLoader, Subset
 from models.CNN import SeizureCNN
 import wandb
-from pykalman import KalmanFilter
-import torch.nn.functional as F
-from utils.early_stop import EarlyStopping
 
-def load_data(npz_path):
-    data = np.load(npz_path)
-    X = data['F']  # (N, 2, 36)
-    y = data['y']
-    X = (X - X.mean()) / X.std()
-    X_tensor = torch.tensor(X).float().unsqueeze(1)  # (N, 1, 2, 36)
-    y_tensor = torch.tensor(y).long()
-    return X_tensor, y_tensor
+import torch.nn.functional as F
+from utils.train_utils import EarlyStopping, load_data, kalman_smooth
 
 
 def train(model, dataloader, criterion, optimizer, device):
@@ -51,14 +42,6 @@ def train(model, dataloader, criterion, optimizer, device):
 
     return avg_loss, acc, current_lr
 
-def kalman_smooth(pred_probs):
-    """
-    对预测概率进行卡尔曼滤波，输入为 (N,) 的 pre-ictal 概率序列。
-    返回平滑后的序列。
-    """
-    kf = KalmanFilter(initial_state_mean=0.5, n_dim_obs=1)
-    smoothed_state_means, _ = kf.smooth(pred_probs.reshape(-1, 1))
-    return smoothed_state_means.ravel()
 
 def evaluate(model, dataloader, device):
     model.eval()
@@ -80,6 +63,7 @@ def evaluate(model, dataloader, device):
     # 准确率计算
     acc = (pred_labels == np.array(all_labels)).sum() / len(all_labels)
     return acc
+
 
 def train_one_patient(args, input_file):
     print(f"\n🔍 正在处理文件: {input_file}")
