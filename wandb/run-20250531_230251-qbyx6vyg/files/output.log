@@ -8,3 +8,4 @@ Epoch 3/40 | Loss: 0.4197 | Train Acc: 0.8937 | Val Acc: 0.9547
 Epoch 4/40 | Loss: 0.4146 | Train Acc: 0.8974 | Val Acc: 0.9539
 Epoch 5/40 | Loss: 0.4141 | Train Acc: 0.8973 | Val Acc: 0.9547
 Epoch 6/40 | Loss: 0.4091 | Train Acc: 0.9020 | Val Acc: 0.9571
+Epoch 7/40 | Loss: 0.4104 | Train Acc: 0.9007 | Val Acc: 0.9551
