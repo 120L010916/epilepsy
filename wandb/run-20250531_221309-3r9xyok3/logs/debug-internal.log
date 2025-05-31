@@ -1,0 +1,15 @@
+{"time":"2025-05-31T22:13:09.402279755+08:00","level":"INFO","msg":"stream: starting","core version":"0.19.4","symlink path":"/home/xulei/xulei/dataset-distillation/Epilepsy/wandb/run-20250531_221309-3r9xyok3/logs/debug-core.log"}
+{"time":"2025-05-31T22:13:10.41357082+08:00","level":"INFO","msg":"created new stream","id":"3r9xyok3"}
+{"time":"2025-05-31T22:13:10.413613751+08:00","level":"INFO","msg":"stream: started","id":"3r9xyok3"}
+{"time":"2025-05-31T22:13:10.413665653+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"3r9xyok3"}
+{"time":"2025-05-31T22:13:10.413663643+08:00","level":"INFO","msg":"handler: started","stream_id":"3r9xyok3"}
+{"time":"2025-05-31T22:13:10.413719224+08:00","level":"INFO","msg":"sender: started","stream_id":"3r9xyok3"}
+{"time":"2025-05-31T22:13:10.839290241+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-31T22:15:19.025323515+08:00","level":"INFO","msg":"stream: closing","id":"3r9xyok3"}
+{"time":"2025-05-31T22:15:19.025352956+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-31T22:15:19.026126966+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-31T22:15:20.564349909+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-31T22:15:21.246136126+08:00","level":"INFO","msg":"handler: closed","stream_id":"3r9xyok3"}
+{"time":"2025-05-31T22:15:21.246169357+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"3r9xyok3"}
+{"time":"2025-05-31T22:15:21.246177127+08:00","level":"INFO","msg":"sender: closed","stream_id":"3r9xyok3"}
+{"time":"2025-05-31T22:15:21.246244299+08:00","level":"INFO","msg":"stream: closed","id":"3r9xyok3"}

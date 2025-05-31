@@ -1,0 +1,16 @@
+{"time":"2025-05-31T22:26:26.997745724+08:00","level":"INFO","msg":"stream: starting","core version":"0.19.4","symlink path":"/home/xulei/xulei/dataset-distillation/Epilepsy/wandb/run-20250531_222626-wjfr26oh/logs/debug-core.log"}
+{"time":"2025-05-31T22:26:28.109147166+08:00","level":"INFO","msg":"created new stream","id":"wjfr26oh"}
+{"time":"2025-05-31T22:26:28.109189607+08:00","level":"INFO","msg":"stream: started","id":"wjfr26oh"}
+{"time":"2025-05-31T22:26:28.109224498+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"wjfr26oh"}
+{"time":"2025-05-31T22:26:28.109377222+08:00","level":"INFO","msg":"sender: started","stream_id":"wjfr26oh"}
+{"time":"2025-05-31T22:26:28.109408212+08:00","level":"INFO","msg":"handler: started","stream_id":"wjfr26oh"}
+{"time":"2025-05-31T22:26:28.466576979+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-31T22:29:01.165196745+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-31T22:29:01.165858922+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-31T22:29:02.165727026+08:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading wandb-summary.json","runtime_seconds":0.470613531,"progress":"248.5KB/248.5KB"},{"desc":"uploading config.yaml","runtime_seconds":0.224700579,"progress":"711B/711B"}],"total_operations":2}}
+{"time":"2025-05-31T22:29:03.520248236+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-31T22:29:05.343360423+08:00","level":"INFO","msg":"stream: closing","id":"wjfr26oh"}
+{"time":"2025-05-31T22:29:05.343390464+08:00","level":"INFO","msg":"handler: closed","stream_id":"wjfr26oh"}
+{"time":"2025-05-31T22:29:05.343405905+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"wjfr26oh"}
+{"time":"2025-05-31T22:29:05.343426005+08:00","level":"INFO","msg":"sender: closed","stream_id":"wjfr26oh"}
+{"time":"2025-05-31T22:29:05.343474676+08:00","level":"INFO","msg":"stream: closed","id":"wjfr26oh"}

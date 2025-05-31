@@ -1,0 +1,8 @@
+
+🔍 正在处理文件: data/features/chb01/features.npz
+
+📂 Fold 1/5
+Epoch 1/40 | Loss: 0.5426 | Train Acc: 0.7604 | Val Acc: 0.9567
+Epoch 2/40 | Loss: 0.4311 | Train Acc: 0.8809 | Val Acc: 0.9515
+Epoch 3/40 | Loss: 0.4186 | Train Acc: 0.8927 | Val Acc: 0.9527
+Epoch 4/40 | Loss: 0.4146 | Train Acc: 0.8966 | Val Acc: 0.9519

@@ -1,0 +1,9 @@
+nohup: ignoring input
+wandb: Currently logged in as: tihuahu (tihuahu-nus). Use `wandb login --relogin` to force relogin
+wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
+wandb: - Waiting for wandb.init()...wandb: \ Waiting for wandb.init()...wandb: Tracking run with wandb version 0.19.4
+wandb: Run data is saved locally in /home/xulei/xulei/dataset-distillation/Epilepsy/wandb/run-20250531_230251-qbyx6vyg
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run CrossPatientValidation
+wandb: ⭐️ View project at https://wandb.ai/tihuahu-nus/seizure-prediction
+wandb: 🚀 View run at https://wandb.ai/tihuahu-nus/seizure-prediction/runs/qbyx6vyg

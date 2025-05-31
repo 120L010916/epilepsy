@@ -1,0 +1,12 @@
+
+📂 Fold 1/5
+Traceback (most recent call last):
+  File "/home/xulei/xulei/dataset-distillation/Epilepsy/train.py", line 151, in <module>
+    main(args, input_file)
+  File "/home/xulei/xulei/dataset-distillation/Epilepsy/train.py", line 124, in main
+    val_acc = evaluate(model, val_loader, device)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xulei/xulei/dataset-distillation/Epilepsy/train.py", line 77, in evaluate
+    probs = F.softmax(outputs, dim=1)[:, 1]  # 获取 pre-ictal 类别概率
+            ^
+NameError: name 'F' is not defined

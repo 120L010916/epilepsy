@@ -1,0 +1,112 @@
+
+📂 Fold 1/5
+Epoch 1/20 | Loss: 0.5463 | Val Acc: 0.9547
+Epoch 2/20 | Loss: 0.4331 | Val Acc: 0.9531
+Epoch 3/20 | Loss: 0.4231 | Val Acc: 0.9543
+Epoch 4/20 | Loss: 0.4179 | Val Acc: 0.9539
+Epoch 5/20 | Loss: 0.4139 | Val Acc: 0.9511
+Epoch 6/20 | Loss: 0.4142 | Val Acc: 0.9543
+Epoch 7/20 | Loss: 0.4101 | Val Acc: 0.9535
+Epoch 8/20 | Loss: 0.4093 | Val Acc: 0.9519
+Epoch 9/20 | Loss: 0.4098 | Val Acc: 0.9543
+Epoch 10/20 | Loss: 0.4111 | Val Acc: 0.9547
+Epoch 11/20 | Loss: 0.4095 | Val Acc: 0.9523
+Epoch 12/20 | Loss: 0.4093 | Val Acc: 0.9515
+Epoch 13/20 | Loss: 0.4082 | Val Acc: 0.9507
+Epoch 14/20 | Loss: 0.4087 | Val Acc: 0.9507
+Epoch 15/20 | Loss: 0.4075 | Val Acc: 0.9523
+Epoch 16/20 | Loss: 0.4052 | Val Acc: 0.9523
+Epoch 17/20 | Loss: 0.4086 | Val Acc: 0.9523
+Epoch 18/20 | Loss: 0.4071 | Val Acc: 0.9543
+Epoch 19/20 | Loss: 0.4070 | Val Acc: 0.9539
+Epoch 20/20 | Loss: 0.4042 | Val Acc: 0.9543
+
+📂 Fold 2/5
+Epoch 1/20 | Loss: 0.5396 | Val Acc: 0.9480
+Epoch 2/20 | Loss: 0.4310 | Val Acc: 0.9476
+Epoch 3/20 | Loss: 0.4193 | Val Acc: 0.9452
+Epoch 4/20 | Loss: 0.4159 | Val Acc: 0.9511
+Epoch 5/20 | Loss: 0.4142 | Val Acc: 0.9507
+Epoch 6/20 | Loss: 0.4137 | Val Acc: 0.9519
+Epoch 7/20 | Loss: 0.4107 | Val Acc: 0.9515
+Epoch 8/20 | Loss: 0.4075 | Val Acc: 0.9503
+Epoch 9/20 | Loss: 0.4073 | Val Acc: 0.9499
+Epoch 10/20 | Loss: 0.4075 | Val Acc: 0.9515
+Epoch 11/20 | Loss: 0.4075 | Val Acc: 0.9464
+Epoch 12/20 | Loss: 0.4068 | Val Acc: 0.9499
+Epoch 13/20 | Loss: 0.4036 | Val Acc: 0.9519
+Epoch 14/20 | Loss: 0.4068 | Val Acc: 0.9511
+Epoch 15/20 | Loss: 0.4073 | Val Acc: 0.9539
+Epoch 16/20 | Loss: 0.4033 | Val Acc: 0.9495
+Epoch 17/20 | Loss: 0.4040 | Val Acc: 0.9559
+Epoch 18/20 | Loss: 0.4041 | Val Acc: 0.9535
+Epoch 19/20 | Loss: 0.4050 | Val Acc: 0.9515
+Epoch 20/20 | Loss: 0.4020 | Val Acc: 0.9515
+
+📂 Fold 3/5
+Epoch 1/20 | Loss: 0.5582 | Val Acc: 0.9543
+Epoch 2/20 | Loss: 0.4354 | Val Acc: 0.9559
+Epoch 3/20 | Loss: 0.4214 | Val Acc: 0.9535
+Epoch 4/20 | Loss: 0.4163 | Val Acc: 0.9539
+Epoch 5/20 | Loss: 0.4143 | Val Acc: 0.9563
+Epoch 6/20 | Loss: 0.4123 | Val Acc: 0.9559
+Epoch 7/20 | Loss: 0.4107 | Val Acc: 0.9583
+Epoch 8/20 | Loss: 0.4106 | Val Acc: 0.9583
+Epoch 9/20 | Loss: 0.4121 | Val Acc: 0.9575
+Epoch 10/20 | Loss: 0.4092 | Val Acc: 0.9587
+Epoch 11/20 | Loss: 0.4075 | Val Acc: 0.9583
+Epoch 12/20 | Loss: 0.4108 | Val Acc: 0.9599
+Epoch 13/20 | Loss: 0.4066 | Val Acc: 0.9579
+Epoch 14/20 | Loss: 0.4077 | Val Acc: 0.9595
+Epoch 15/20 | Loss: 0.4076 | Val Acc: 0.9583
+Epoch 16/20 | Loss: 0.4068 | Val Acc: 0.9575
+Epoch 17/20 | Loss: 0.4071 | Val Acc: 0.9595
+Epoch 18/20 | Loss: 0.4061 | Val Acc: 0.9595
+Epoch 19/20 | Loss: 0.4061 | Val Acc: 0.9603
+Epoch 20/20 | Loss: 0.4044 | Val Acc: 0.9603
+
+📂 Fold 4/5
+Epoch 1/20 | Loss: 0.5484 | Val Acc: 0.9432
+Epoch 2/20 | Loss: 0.4334 | Val Acc: 0.9456
+Epoch 3/20 | Loss: 0.4171 | Val Acc: 0.9464
+Epoch 4/20 | Loss: 0.4171 | Val Acc: 0.9456
+Epoch 5/20 | Loss: 0.4128 | Val Acc: 0.9472
+Epoch 6/20 | Loss: 0.4106 | Val Acc: 0.9456
+Epoch 7/20 | Loss: 0.4103 | Val Acc: 0.9484
+Epoch 8/20 | Loss: 0.4080 | Val Acc: 0.9472
+Epoch 9/20 | Loss: 0.4056 | Val Acc: 0.9484
+Epoch 10/20 | Loss: 0.4068 | Val Acc: 0.9480
+Epoch 11/20 | Loss: 0.4080 | Val Acc: 0.9472
+Epoch 12/20 | Loss: 0.4044 | Val Acc: 0.9487
+Epoch 13/20 | Loss: 0.4024 | Val Acc: 0.9476
+Epoch 14/20 | Loss: 0.4046 | Val Acc: 0.9476
+Epoch 15/20 | Loss: 0.4033 | Val Acc: 0.9507
+Epoch 16/20 | Loss: 0.4024 | Val Acc: 0.9468
+Epoch 17/20 | Loss: 0.4043 | Val Acc: 0.9480
+Epoch 18/20 | Loss: 0.4044 | Val Acc: 0.9491
+Epoch 19/20 | Loss: 0.4012 | Val Acc: 0.9484
+Epoch 20/20 | Loss: 0.4014 | Val Acc: 0.9472
+
+📂 Fold 5/5
+Epoch 1/20 | Loss: 0.5512 | Val Acc: 0.9555
+Epoch 2/20 | Loss: 0.4378 | Val Acc: 0.9575
+Epoch 3/20 | Loss: 0.4236 | Val Acc: 0.9587
+Epoch 4/20 | Loss: 0.4197 | Val Acc: 0.9591
+Epoch 5/20 | Loss: 0.4159 | Val Acc: 0.9583
+Epoch 6/20 | Loss: 0.4133 | Val Acc: 0.9571
+Epoch 7/20 | Loss: 0.4114 | Val Acc: 0.9591
+Epoch 8/20 | Loss: 0.4113 | Val Acc: 0.9607
+Epoch 9/20 | Loss: 0.4099 | Val Acc: 0.9599
+Epoch 10/20 | Loss: 0.4079 | Val Acc: 0.9599
+Epoch 11/20 | Loss: 0.4091 | Val Acc: 0.9587
+Epoch 12/20 | Loss: 0.4093 | Val Acc: 0.9603
+Epoch 13/20 | Loss: 0.4104 | Val Acc: 0.9595
+Epoch 14/20 | Loss: 0.4082 | Val Acc: 0.9591
+Epoch 15/20 | Loss: 0.4063 | Val Acc: 0.9603
+Epoch 16/20 | Loss: 0.4072 | Val Acc: 0.9603
+Epoch 17/20 | Loss: 0.4044 | Val Acc: 0.9603
+Epoch 18/20 | Loss: 0.4056 | Val Acc: 0.9603
+Epoch 19/20 | Loss: 0.4061 | Val Acc: 0.9595
+Epoch 20/20 | Loss: 0.4068 | Val Acc: 0.9607
+
+✅ features.npz 的平均准确率：0.9548 ± 0.0052
