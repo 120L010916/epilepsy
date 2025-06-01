@@ -3,7 +3,7 @@ nohup python utils/CSP.py
 
 
 nohup python train_kf.py \
-    > logs/trainkf_0601.log 2>&1 &
+    > logs/trainkf_0602_morelr.log 2>&1 &
 
 export CUDA_VISIBLE_DEVICES=1
 nohup python train_lo.py \

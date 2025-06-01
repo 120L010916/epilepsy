@@ -9,7 +9,7 @@ from torch.utils.data import TensorDataset, DataLoader, Subset
 from models.CNN import SeizureResNet,  SeizureCNN_TH, SeizureCNN
 # import wandb
 from sklearn.model_selection import KFold
-from utils.train_utils import  load_data, kalman_smooth, evaluate_metrics
+from utils.train_utils import  load_data, kalman_smooth, evaluate_metrics, EarlyStopping
 # os.environ['WANDB_MODE'] = 'disabled'
 
 def train(model, dataloader, criterion, optimizer, device):
@@ -42,7 +42,7 @@ def train(model, dataloader, criterion, optimizer, device):
     return avg_loss, acc, current_lr
 
 
-def evaluate(model, dataloader, device, use_kalman=False):
+def evaluate(model, dataloader, device, use_kalman=True):
     model.eval()
     y_true, y_pred, y_prob = [], [], []
 
@@ -87,14 +87,26 @@ def train_one_patient(args, input_file):
         optimizer = optim.Adam(model.parameters(), lr=args.lr)
         criterion = nn.CrossEntropyLoss()
         # scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=20, gamma=0.5)
-
+        early_stopping = EarlyStopping(patience=10) 
         # wandb.watch(model, log="all", log_freq=10)
 
         for epoch in range(args.epochs):
             train_loss, train_acc, lr = train(model, train_loader, criterion, optimizer, device)
+            y_true, y_pred, y_prob = evaluate(model, val_loader, device)
+            metrics = evaluate_metrics(y_true, y_pred, y_prob)
+            val_auc = metrics.get('accuracy', 0.0)  # 可选择其他指标
+
+            early_stopping(val_auc)
+
+            print(f"Epoch {epoch+1}/{args.epochs} | Train Loss: {train_loss:.4f} | Train Acc: {train_acc:.4f} | AUC: {val_auc:.4f}")
+
+            if early_stopping.early_stop:
+                print(f"🛑 Early stopping triggered at epoch {epoch+1}")
+                break
             # scheduler.step()
 
-        # 只在最后一轮评估验证集
+        # 只在最佳模型上评估验证集
+        # model.load_state_dict(early_stopping.best_model_state)
         y_true, y_pred, y_prob = evaluate(model, val_loader, device)
         metrics = evaluate_metrics(y_true, y_pred, y_prob)
 
@@ -155,7 +167,7 @@ if __name__ == "__main__":
     parser.add_argument('--epochs', type=int, default=200, help='Number of training epochs')
     parser.add_argument('--batch_size', type=int, default=256, help='Training batch size')
     parser.add_argument('--lr', type=float, default=0.01, help='Learning rate')
-    parser.add_argument('--k_folds', type=int, default=5, help='Number of folds for K-Fold cross-validation')
+    parser.add_argument('--k_folds', type=int, default=2, help='Number of folds for K-Fold cross-validation')
     
     args = parser.parse_args()
     main(args)

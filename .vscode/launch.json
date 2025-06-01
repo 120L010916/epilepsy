@@ -7,11 +7,12 @@
 
 
 
+
         {
-          "name": "Debug data_aug.py",
+          "name": "Debug train_kf.py",
           "type": "debugpy",
           "request": "launch",
-          "program": "${workspaceFolder}/utils/data_aug.py",
+          "program": "${workspaceFolder}/train_kf.py",
           "console": "integratedTerminal",
           "justMyCode": true,
           "cwd": "${workspaceFolder}",

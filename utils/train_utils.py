@@ -52,7 +52,8 @@ def evaluate_metrics(y_true, y_pred, y_prob=None):
 
     # False Positive Rate
     metrics['fpr'] = fp / (fp + tn) if (fp + tn) > 0 else 0.0
-
+    total_time = len(y_true) * 5 # 总样本数 * 5秒
+    metrics['fpr'] = metrics['fpr'] * 3600 / total_time
     # Accuracy
     metrics['accuracy'] = accuracy_score(y_true, y_pred)
 
