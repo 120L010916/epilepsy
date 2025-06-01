@@ -1,17 +1,16 @@
+from collections import defaultdict
 import os
 import argparse
 import numpy as np
 import torch
 import torch.nn as nn
 import torch.optim as optim
-from sklearn.model_selection import KFold
 from torch.utils.data import TensorDataset, DataLoader, Subset
-from models.CNN import SeizureCNN
-import wandb
-
-import torch.nn.functional as F
-from utils.train_utils import EarlyStopping, load_data, kalman_smooth
-
+from models.CNN import SeizureResNet,  SeizureCNN_TH, SeizureCNN
+# import wandb
+from sklearn.model_selection import KFold
+from utils.train_utils import  load_data, kalman_smooth, evaluate_metrics
+# os.environ['WANDB_MODE'] = 'disabled'
 
 def train(model, dataloader, criterion, optimizer, device):
     model.train()
@@ -43,111 +42,120 @@ def train(model, dataloader, criterion, optimizer, device):
     return avg_loss, acc, current_lr
 
 
-def evaluate(model, dataloader, device):
+def evaluate(model, dataloader, device, use_kalman=False):
     model.eval()
-    all_probs = []
-    all_labels = []
+    y_true, y_pred, y_prob = [], [], []
 
     with torch.no_grad():
         for inputs, labels in dataloader:
             inputs = inputs.to(device)
             outputs = model(inputs)
-            probs = F.softmax(outputs, dim=1)[:, 1]  # 获取 pre-ictal 类别概率
-            all_probs.extend(probs.cpu().numpy())
-            all_labels.extend(labels.numpy())
+            probs = torch.softmax(outputs, dim=1)[:, 1]  # 概率值
+            y_true.extend(labels.cpu().numpy())
+            y_prob.extend(probs.cpu().numpy())
 
-    # 卡尔曼滤波
-    smoothed_probs = kalman_smooth(np.array(all_probs))
-    pred_labels = (smoothed_probs > 0.5).astype(int)  # 阈值二分类
+    y_true = np.array(y_true)
+    y_prob = np.array(y_prob)
 
-    # 准确率计算
-    acc = (pred_labels == np.array(all_labels)).sum() / len(all_labels)
-    return acc
+    # 🎯 卡尔曼滤波（可选）
+    if use_kalman:
+        y_prob = kalman_smooth(y_prob)
+
+    # 二值预测
+    y_pred = (y_prob > 0.5).astype(int)
+
+    return y_true, y_pred, y_prob
 
 
 def train_one_patient(args, input_file):
     print(f"\n🔍 正在处理文件: {input_file}")
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    X, y = load_data(input_file)
+    X, y = load_data(input_file)  # 假设返回的是 seizure-level 样本
+
     dataset = TensorDataset(X, y)
     kf = KFold(n_splits=args.k_folds, shuffle=True, random_state=42)
 
-    patient_val_acc = []
+    metrics_list = []
 
-    for fold, (train_idx, val_idx) in enumerate(kf.split(dataset)):
-        print(f"\n📂 Fold {fold+1}/{args.k_folds}")
+    for fold, (train_idx, test_idx) in enumerate(kf.split(dataset)):
+        print(f"\n📂 Fold {fold+1}/{args.k_folds} (K-Fold)")
 
         train_loader = DataLoader(Subset(dataset, train_idx), batch_size=args.batch_size, shuffle=True)
-        val_loader = DataLoader(Subset(dataset, val_idx), batch_size=args.batch_size)
+        val_loader = DataLoader(Subset(dataset, test_idx), batch_size=args.batch_size)
 
         model = SeizureCNN().to(device)
         optimizer = optim.Adam(model.parameters(), lr=args.lr)
-        scheduler = optim.lr_scheduler.StepLR(optimizer, step_size=5, gamma=0.5)
         criterion = nn.CrossEntropyLoss()
-        early_stopping = EarlyStopping(patience=10)
+        # scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=20, gamma=0.5)
 
-        wandb.watch(model, log="all")
-        
+        # wandb.watch(model, log="all", log_freq=10)
+
         for epoch in range(args.epochs):
             train_loss, train_acc, lr = train(model, train_loader, criterion, optimizer, device)
-            val_acc = evaluate(model, val_loader, device)
+            # scheduler.step()
 
-            wandb.log({
-                "epoch": epoch + 1,
-                "train_loss": train_loss,
-                "train_accuracy": train_acc,
-                "val_accuracy": val_acc,
-                "learning_rate": lr
-            })
+        # 只在最后一轮评估验证集
+        y_true, y_pred, y_prob = evaluate(model, val_loader, device)
+        metrics = evaluate_metrics(y_true, y_pred, y_prob)
 
-            print(f"Epoch {epoch+1}/{args.epochs} | Loss: {train_loss:.4f} | Train Acc: {train_acc:.4f} | Val Acc: {val_acc:.4f}")
+        for k, v in metrics.items():
+            print(f"{k}: {v:.4f}")
 
-            scheduler.step()
-            early_stopping(val_acc)
-            if early_stopping.early_stop:
-                print("🛑 Early stopping triggered.")
-                break
+        # wandb.log({
+        #     "fold": fold + 1,
+        #     **metrics
+        # })
 
-        patient_val_acc.append(val_acc)
+        print(f"Epoch {args.epochs} | Train Loss: {train_loss:.4f} | Train Acc: {train_acc:.4f} | LR: {lr:.6f}")
+        metrics_list.append(metrics)
 
-    avg = np.mean(patient_val_acc)
-    std = np.std(patient_val_acc)
-    wandb.log({
-        "patient_avg_val_accuracy": avg,
-        "patient_val_std": std
-    })
-    return avg, std
+    # 平均每个 fold 的指标
+    avg_metrics = {}
+    for key in metrics_list[0].keys():
+        avg_metrics[f"avg_{key}"] = np.mean([m[key] for m in metrics_list])
+
+    # wandb.log(avg_metrics)
+
+    for k, v in avg_metrics.items():
+        print(f"{k}: {v:.4f}")
+
+    return avg_metrics
 
 def main(args):
-    overall_acc = []
-    wandb.init(
-        project="seizure-prediction",
-        config=vars(args),
-        name="CrossPatientValidation"
-    )
+    all_avg_metrics = defaultdict(list)  # 用于存储每个患者的平均 metrics
+    
+    # wandb.init(
+    #     project="seizure-prediction",
+    #     config=vars(args),
+    #     name="CrossPatientValidation"
+    # )
 
     for i in range(1, 24):  # chb01 to chb23
         subj_id = f"chb{i:02d}"
         input_file = os.path.join(args.input_dir, subj_id, "features.npz")
         if os.path.exists(input_file):
-            acc, std = train_one_patient(args, input_file)
-            overall_acc.append(acc)
+            avg_metrics = train_one_patient(args, input_file)
+            for k, v in avg_metrics.items():
+                all_avg_metrics[k].append(v)
         else:
             print(f"⚠️ 文件不存在: {input_file}")
 
-    wandb.log({
-        "final_avg_val_acc": np.mean(overall_acc),
-        "final_std_val_acc": np.std(overall_acc)
-    })
-    print(f"\n✅ 所有患者的平均准确率：{np.mean(overall_acc):.4f} ± {np.std(overall_acc):.4f}")
-    wandb.finish()
+    final_metrics = {f"final_avg_{k}": np.mean(vs) for k, vs in all_avg_metrics.items()}
+    # wandb.log({
+    #     **final_metrics
+    # })
+    print("📊 所有患者平均指标：")
+    for k, v in final_metrics.items():
+        print(f"{k}: {v:.4f}")
+    # wandb.finish()
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Train SeizureCNN with cross-validation.")
     parser.add_argument('--input_dir', type=str, default='data/features/', help='Directory containing .npz files')
-    parser.add_argument('--epochs', type=int, default=40, help='Number of training epochs')
-    parser.add_argument('--batch_size', type=int, default=32, help='Training batch size')
-    parser.add_argument('--lr', type=float, default=0.001, help='Learning rate')
-    parser.add_argument('--k_folds', type=int, default=5, help='Number of folds for cross-validation')
+    parser.add_argument('--epochs', type=int, default=200, help='Number of training epochs')
+    parser.add_argument('--batch_size', type=int, default=256, help='Training batch size')
+    parser.add_argument('--lr', type=float, default=0.01, help='Learning rate')
+    parser.add_argument('--k_folds', type=int, default=5, help='Number of folds for K-Fold cross-validation')
+    
     args = parser.parse_args()
     main(args)
