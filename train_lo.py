@@ -71,7 +71,6 @@ def train_one_patient(args, input_file):
     dataset = TensorDataset(X, y)
     loo = LeaveOneOut()
 
-    val_accuracies = []
     metrics_list = []
     
     for fold, (train_idx, test_idx) in enumerate(loo.split(dataset)):
@@ -89,7 +88,6 @@ def train_one_patient(args, input_file):
 
         for epoch in range(args.epochs):
             train_loss, train_acc, lr = train(model, train_loader, criterion, optimizer, device)
-            val_acc = evaluate(model, val_loader, device)
             y_true, y_pred, y_prob = evaluate(model, val_loader, device)
             metrics = evaluate_metrics(y_true, y_pred, y_prob)
 
@@ -100,31 +98,24 @@ def train_one_patient(args, input_file):
             # 记录到 wandb
             wandb.log(metrics)
 
-            print(f"Epoch {epoch+1}/{args.epochs} | Train Loss: {train_loss:.4f} | Train Acc: {train_acc:.4f} | Val Acc: {val_acc:.4f}")
+            print(f"Epoch {epoch+1}/{args.epochs} | Train Loss: {train_loss:.4f} | Train Acc: {train_acc:.4f}  | LR: {lr:.6f}")
 
-        val_accuracies.append(val_acc)
         metrics_list.append(metrics)
         
     avg_metrics = {}
     for key in metrics_list[0].keys():
         avg_metrics[f"avg_{key}"] = np.mean([m[key] for m in metrics_list])
-    avg = np.mean(val_accuracies)
-    std = np.std(val_accuracies)
 
     wandb.log({
         **avg_metrics,
-        "chb_avg_val_accuracy": avg,
-        "chb_val_std": std
     })
 
-    print(f"✅ LOOCV 平均准确率：{avg:.4f} ± {std:.4f}")
     for k, v in avg_metrics.items():
         print(f"{k}: {v:.4f}")
-        
-    return avg, std, avg_metrics
+
+    return avg_metrics
 
 def main(args):
-    overall_acc = []
     all_avg_metrics = defaultdict(list)  # 用于存储每个患者的平均 metrics
     
     wandb.init(
@@ -137,8 +128,7 @@ def main(args):
         subj_id = f"chb{i:02d}"
         input_file = os.path.join(args.input_dir, subj_id, "features.npz")
         if os.path.exists(input_file):
-            acc, std, avg_metrics = train_one_patient(args, input_file)
-            overall_acc.append(acc)
+            avg_metrics = train_one_patient(args, input_file)
             for k, v in avg_metrics.items():
                 all_avg_metrics[k].append(v)
         else:
@@ -146,11 +136,8 @@ def main(args):
 
     final_metrics = {f"final_avg_{k}": np.mean(vs) for k, vs in all_avg_metrics.items()}
     wandb.log({
-        "final_avg_val_acc": np.mean(overall_acc),
-        "final_std_val_acc": np.std(overall_acc),
         **final_metrics
     })
-    print(f"\n✅ 所有患者的平均准确率：{np.mean(overall_acc):.4f} ± {np.std(overall_acc):.4f}")
     print("📊 所有患者平均指标：")
     for k, v in final_metrics.items():
         print(f"{k}: {v:.4f}")

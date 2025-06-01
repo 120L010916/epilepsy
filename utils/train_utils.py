@@ -40,27 +40,35 @@ def evaluate_metrics(y_true, y_pred, y_prob=None):
     y_prob: np.array of predicted probabilities for positive class (optional, for AUC)
     """
     metrics = {}
-    tn, fp, fn, tp = confusion_matrix(y_true, y_pred).ravel()
+    
+    cm = confusion_matrix(y_true, y_pred, labels=[0, 1])
+    if cm.shape == (2, 2):
+        tn, fp, fn, tp = cm.ravel()
+    else:
+        tn = fp = fn = tp = 0
 
-    # 灵敏度（Sensitivity） = TP / (TP + FN)
-    metrics['sensitivity'] = tp / (tp + fn) if (tp + fn) > 0 else 0
+    # Sensitivity (Recall)
+    metrics['sensitivity'] = tp / (tp + fn) if (tp + fn) > 0 else 0.0
 
-    # 误报率（FPR） = FP / (FP + TN)
-    metrics['fpr'] = fp / (fp + tn) if (fp + tn) > 0 else 0
+    # False Positive Rate
+    metrics['fpr'] = fp / (fp + tn) if (fp + tn) > 0 else 0.0
 
-    # 准确率
+    # Accuracy
     metrics['accuracy'] = accuracy_score(y_true, y_pred)
 
-    # 召回率 = sensitivity
-    metrics['recall'] = recall_score(y_true, y_pred)
+    # Recall (same as sensitivity)
+    metrics['recall'] = recall_score(y_true, y_pred, zero_division=0)
 
-    # F1 值
-    metrics['f1'] = f1_score(y_true, y_pred)
+    # F1 Score
+    metrics['f1'] = f1_score(y_true, y_pred, zero_division=0)
 
-    # Kappa
-    metrics['kappa'] = cohen_kappa_score(y_true, y_pred)
+    # Cohen's Kappa
+    try:
+        metrics['kappa'] = cohen_kappa_score(y_true, y_pred)
+    except ValueError:
+        metrics['kappa'] = 0.0
 
-    # AUC（需要概率）
+    # AUC
     if y_prob is not None:
         try:
             metrics['auc'] = roc_auc_score(y_true, y_prob)
@@ -70,7 +78,7 @@ def evaluate_metrics(y_true, y_pred, y_prob=None):
         metrics['auc'] = 0.0
 
     return metrics
-       
+
 def kalman_smooth(pred_probs):
     """
     对预测概率进行卡尔曼滤波，输入为 (N,) 的 pre-ictal 概率序列。

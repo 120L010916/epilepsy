@@ -6,6 +6,7 @@
     "configurations": [
 
 
+
         {
           "name": "Debug data_aug.py",
           "type": "debugpy",
@@ -16,10 +17,10 @@
           "cwd": "${workspaceFolder}",
         },
         {
-          "name": "Debug train.py",
+          "name": "Debug trainlo.py",
           "type": "python",
           "request": "launch",
-          "program": "${workspaceFolder}/train.py",
+          "program": "${workspaceFolder}/train_lo.py",
           "console": "integratedTerminal",
           "justMyCode": true,
           "cwd": "${workspaceFolder}",
