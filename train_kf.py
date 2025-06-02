@@ -29,7 +29,7 @@ def train(model, dataloader, criterion, optimizer, device):
         total_loss += loss.item()
 
         # 计算准确率
-        _, predicted = torch.max(outputs.data, 1)
+        _, predicted = torch.max(outputs.data, 1) #每个样本预测的类别索引
         correct += (predicted == labels).sum().item()
         total += labels.size(0)
 
@@ -50,7 +50,7 @@ def evaluate(model, dataloader, device, use_kalman=True):
         for inputs, labels in dataloader:
             inputs = inputs.to(device)
             outputs = model(inputs)
-            probs = torch.softmax(outputs, dim=1)[:, 1]  # 概率值
+            probs = torch.softmax(outputs, dim=1)[:, 1]  # 只取每个样本属于类别1的概率值（即正类概率）。
             y_true.extend(labels.cpu().numpy())
             y_prob.extend(probs.cpu().numpy())
 
@@ -59,10 +59,10 @@ def evaluate(model, dataloader, device, use_kalman=True):
 
     # 🎯 卡尔曼滤波（可选）
     if use_kalman:
-        y_prob = kalman_smooth(y_prob)
-
-    # 二值预测
-    y_pred = (y_prob > 0.5).astype(int)
+        y_pred = kalman_smooth(y_prob)
+    else:
+        # 二值预测
+        y_pred = (y_prob > 0.5).astype(int)
 
     return y_true, y_pred, y_prob
 
@@ -80,29 +80,29 @@ def train_one_patient(args, input_file):
     for fold, (train_idx, test_idx) in enumerate(kf.split(dataset)):
         print(f"\n📂 Fold {fold+1}/{args.k_folds} (K-Fold)")
 
-        train_loader = DataLoader(Subset(dataset, train_idx), batch_size=args.batch_size, shuffle=True)
+        train_loader = DataLoader(Subset(dataset, train_idx), batch_size=args.batch_size)
         val_loader = DataLoader(Subset(dataset, test_idx), batch_size=args.batch_size)
 
         model = SeizureCNN().to(device)
         optimizer = optim.Adam(model.parameters(), lr=args.lr)
         criterion = nn.CrossEntropyLoss()
         # scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=20, gamma=0.5)
-        early_stopping = EarlyStopping(patience=10) 
+        # early_stopping = EarlyStopping(patience=80) 
         # wandb.watch(model, log="all", log_freq=10)
 
         for epoch in range(args.epochs):
             train_loss, train_acc, lr = train(model, train_loader, criterion, optimizer, device)
             y_true, y_pred, y_prob = evaluate(model, val_loader, device)
             metrics = evaluate_metrics(y_true, y_pred, y_prob)
-            val_auc = metrics.get('accuracy', 0.0)  # 可选择其他指标
+            # val_sens = metrics.get('sensitivity', 0.0)  # 可选择其他指标
+            val_acc = metrics.get('accuracy', 0.0)
+            # early_stopping(val_acc)  # 使用综合指标进行早停
 
-            early_stopping(val_auc)
+            print(f"Epoch {epoch+1}/{args.epochs} | Train Loss: {train_loss:.4f} | Train Acc: {train_acc:.4f} | Val Acc: {val_acc:.4f}")
 
-            print(f"Epoch {epoch+1}/{args.epochs} | Train Loss: {train_loss:.4f} | Train Acc: {train_acc:.4f} | AUC: {val_auc:.4f}")
-
-            if early_stopping.early_stop:
-                print(f"🛑 Early stopping triggered at epoch {epoch+1}")
-                break
+            # if early_stopping.early_stop:
+            #     print(f"🛑 Early stopping triggered at epoch {epoch+1}")
+            #     break
             # scheduler.step()
 
         # 只在最佳模型上评估验证集
@@ -142,7 +142,7 @@ def main(args):
     #     name="CrossPatientValidation"
     # )
 
-    for i in range(1, 24):  # chb01 to chb23
+    for i in range(2, 3):  # chb01 to chb23
         subj_id = f"chb{i:02d}"
         input_file = os.path.join(args.input_dir, subj_id, "features.npz")
         if os.path.exists(input_file):
@@ -165,8 +165,8 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Train SeizureCNN with cross-validation.")
     parser.add_argument('--input_dir', type=str, default='data/features/', help='Directory containing .npz files')
     parser.add_argument('--epochs', type=int, default=200, help='Number of training epochs')
-    parser.add_argument('--batch_size', type=int, default=256, help='Training batch size')
-    parser.add_argument('--lr', type=float, default=0.01, help='Learning rate')
+    parser.add_argument('--batch_size', type=int, default=512, help='Training batch size')
+    parser.add_argument('--lr', type=float, default=0.001, help='Learning rate')
     parser.add_argument('--k_folds', type=int, default=2, help='Number of folds for K-Fold cross-validation')
     
     args = parser.parse_args()

@@ -52,10 +52,10 @@ def evaluate_metrics(y_true, y_pred, y_prob=None):
 
     # False Positive Rate
     metrics['fpr'] = fp / (fp + tn) if (fp + tn) > 0 else 0.0
-    total_time = len(y_true) * 5 # 总样本数 * 5秒
-    metrics['fpr'] = metrics['fpr'] * 3600 / total_time
+    # total_time = len(y_true) * 5 # 总样本数 * 5秒
+    # metrics['fpr'] = fp * 3600 / total_time
     # Accuracy
-    metrics['accuracy'] = accuracy_score(y_true, y_pred)
+    metrics['accuracy'] = (tp + tn) / (tp + tn + fp + fn) if (tp + tn + fp + fn) > 0 else 0.0
 
     # Recall (same as sensitivity)
     metrics['recall'] = recall_score(y_true, y_pred, zero_division=0)
@@ -80,14 +80,27 @@ def evaluate_metrics(y_true, y_pred, y_prob=None):
 
     return metrics
 
-def kalman_smooth(pred_probs):
+def kalman_smooth(pred_probs, threshold=0.5, T=5):
     """
-    对预测概率进行卡尔曼滤波，输入为 (N,) 的 pre-ictal 概率序列。
-    返回平滑后的序列。
+    pred_probs: numpy array of predicted probabilities (for class 1: pre-ictal)
+    threshold: threshold for binarizing predictions (default=0.8)
+    T: smoothing window size (default=5)
+    
+    Returns:
+        alarm_output: binary array with smoothed predictions using sliding window
     """
-    kf = KalmanFilter(initial_state_mean=0.5, n_dim_obs=1)
-    smoothed_state_means, _ = kf.smooth(pred_probs.reshape(-1, 1))
-    return smoothed_state_means.ravel()    
+    # Step 1: Convert prob to binary prediction
+    bin_pred = (pred_probs >= threshold).astype(int)
+
+    # Step 2: Apply sliding window average
+    alarm_output = np.zeros_like(bin_pred)
+
+    for i in range(T - 1, len(bin_pred)):
+        window = bin_pred[i - T + 1:i + 1]
+        if np.sum(window) == T:  # 所有 T 个窗口都为 1，则触发报警
+            alarm_output[i] = 1
+
+    return alarm_output
 
 
 
