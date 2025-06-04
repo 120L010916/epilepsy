@@ -1,0 +1,1365 @@
+
+🔍 正在处理文件: data/features/chb01/features.npz
+
+📂 Fold 1/5 (K-Fold)
+sensitivity: 0.9528
+fpr: 0.1507
+accuracy: 0.9130
+recall: 0.9528
+f1: 0.9309
+kappa: 0.8136
+auc: 0.9536
+Epoch 30 | Train Loss: 0.4077 | Train Acc: 0.9039 | LR: 0.001000
+
+📂 Fold 2/5 (K-Fold)
+sensitivity: 0.9616
+fpr: 0.1599
+accuracy: 0.9118
+recall: 0.9616
+f1: 0.9279
+kappa: 0.8147
+auc: 0.9600
+Epoch 30 | Train Loss: 0.4020 | Train Acc: 0.9088 | LR: 0.001000
+
+📂 Fold 3/5 (K-Fold)
+sensitivity: 0.9582
+fpr: 0.1471
+accuracy: 0.9170
+recall: 0.9582
+f1: 0.9335
+kappa: 0.8232
+auc: 0.9588
+Epoch 30 | Train Loss: 0.4041 | Train Acc: 0.9058 | LR: 0.001000
+
+📂 Fold 4/5 (K-Fold)
+sensitivity: 0.9451
+fpr: 0.1572
+accuracy: 0.9035
+recall: 0.9451
+f1: 0.9207
+kappa: 0.7975
+auc: 0.9429
+Epoch 30 | Train Loss: 0.4031 | Train Acc: 0.9068 | LR: 0.001000
+
+📂 Fold 5/5 (K-Fold)
+sensitivity: 0.9558
+fpr: 0.1212
+accuracy: 0.9245
+recall: 0.9558
+f1: 0.9376
+kappa: 0.8421
+auc: 0.9693
+Epoch 30 | Train Loss: 0.4088 | Train Acc: 0.9029 | LR: 0.001000
+avg_sensitivity: 0.9547
+avg_fpr: 0.1472
+avg_accuracy: 0.9139
+avg_recall: 0.9547
+avg_f1: 0.9301
+avg_kappa: 0.8182
+avg_auc: 0.9569
+
+🔍 正在处理文件: data/features/chb02/features.npz
+
+📂 Fold 1/5 (K-Fold)
+sensitivity: 0.8297
+fpr: 0.2094
+accuracy: 0.8154
+recall: 0.8297
+f1: 0.8505
+kappa: 0.6095
+auc: 0.8899
+Epoch 30 | Train Loss: 0.4840 | Train Acc: 0.8231 | LR: 0.001000
+
+📂 Fold 2/5 (K-Fold)
+sensitivity: 0.8714
+fpr: 0.1709
+accuracy: 0.8544
+recall: 0.8714
+f1: 0.8773
+kappa: 0.6982
+auc: 0.9221
+Epoch 30 | Train Loss: 0.4800 | Train Acc: 0.8286 | LR: 0.001000
+
+📂 Fold 3/5 (K-Fold)
+sensitivity: 0.8416
+fpr: 0.1782
+accuracy: 0.8337
+recall: 0.8416
+f1: 0.8588
+kappa: 0.6568
+auc: 0.8925
+Epoch 30 | Train Loss: 0.4737 | Train Acc: 0.8326 | LR: 0.001000
+
+📂 Fold 4/5 (K-Fold)
+sensitivity: 0.8368
+fpr: 0.1797
+accuracy: 0.8303
+recall: 0.8368
+f1: 0.8563
+kappa: 0.6493
+auc: 0.9041
+Epoch 30 | Train Loss: 0.4786 | Train Acc: 0.8277 | LR: 0.001000
+
+📂 Fold 5/5 (K-Fold)
+sensitivity: 0.8740
+fpr: 0.2289
+accuracy: 0.8291
+recall: 0.8740
+f1: 0.8523
+kappa: 0.6499
+auc: 0.8967
+Epoch 30 | Train Loss: 0.4752 | Train Acc: 0.8331 | LR: 0.001000
+avg_sensitivity: 0.8507
+avg_fpr: 0.1934
+avg_accuracy: 0.8326
+avg_recall: 0.8507
+avg_f1: 0.8591
+avg_kappa: 0.6527
+avg_auc: 0.9011
+
+🔍 正在处理文件: data/features/chb03/features.npz
+
+📂 Fold 1/5 (K-Fold)
+sensitivity: 0.8396
+fpr: 0.1083
+accuracy: 0.8600
+recall: 0.8396
+f1: 0.8795
+kappa: 0.7135
+auc: 0.9154
+Epoch 30 | Train Loss: 0.4617 | Train Acc: 0.8479 | LR: 0.001000
+
+📂 Fold 2/5 (K-Fold)
+sensitivity: 0.8597
+fpr: 0.1187
+accuracy: 0.8682
+recall: 0.8597
+f1: 0.8880
+kappa: 0.7282
+auc: 0.9186
+Epoch 30 | Train Loss: 0.4593 | Train Acc: 0.8505 | LR: 0.001000
+
+📂 Fold 3/5 (K-Fold)
+sensitivity: 0.8421
+fpr: 0.0887
+accuracy: 0.8700
+recall: 0.8421
+f1: 0.8856
+kappa: 0.7359
+auc: 0.9201
+Epoch 30 | Train Loss: 0.4680 | Train Acc: 0.8426 | LR: 0.001000
+
+📂 Fold 4/5 (K-Fold)
+sensitivity: 0.8287
+fpr: 0.0826
+accuracy: 0.8646
+recall: 0.8287
+f1: 0.8793
+kappa: 0.7263
+auc: 0.9264
+Epoch 30 | Train Loss: 0.4637 | Train Acc: 0.8468 | LR: 0.001000
+
+📂 Fold 5/5 (K-Fold)
+sensitivity: 0.8685
+fpr: 0.1544
+accuracy: 0.8591
+recall: 0.8685
+f1: 0.8793
+kappa: 0.7103
+auc: 0.8999
+Epoch 30 | Train Loss: 0.4647 | Train Acc: 0.8445 | LR: 0.001000
+avg_sensitivity: 0.8477
+avg_fpr: 0.1105
+avg_accuracy: 0.8644
+avg_recall: 0.8477
+avg_f1: 0.8823
+avg_kappa: 0.7229
+avg_auc: 0.9161
+
+🔍 正在处理文件: data/features/chb04/features.npz
+
+📂 Fold 1/5 (K-Fold)
+sensitivity: 0.8370
+fpr: 0.2143
+accuracy: 0.8165
+recall: 0.8370
+f1: 0.8458
+kappa: 0.6194
+auc: 0.8913
+Epoch 30 | Train Loss: 0.5090 | Train Acc: 0.7910 | LR: 0.001000
+
+📂 Fold 2/5 (K-Fold)
+sensitivity: 0.8173
+fpr: 0.2038
+accuracy: 0.8089
+recall: 0.8173
+f1: 0.8372
+kappa: 0.6062
+auc: 0.8932
+Epoch 30 | Train Loss: 0.5140 | Train Acc: 0.7889 | LR: 0.001000
+
+📂 Fold 3/5 (K-Fold)
+sensitivity: 0.8014
+fpr: 0.1696
+accuracy: 0.8131
+recall: 0.8014
+f1: 0.8369
+kappa: 0.6190
+auc: 0.8956
+Epoch 30 | Train Loss: 0.5092 | Train Acc: 0.7915 | LR: 0.001000
+
+📂 Fold 4/5 (K-Fold)
+sensitivity: 0.8002
+fpr: 0.1954
+accuracy: 0.8019
+recall: 0.8002
+f1: 0.8303
+kappa: 0.5934
+auc: 0.8836
+Epoch 30 | Train Loss: 0.5027 | Train Acc: 0.8000 | LR: 0.001000
+
+📂 Fold 5/5 (K-Fold)
+sensitivity: 0.8409
+fpr: 0.2380
+accuracy: 0.8089
+recall: 0.8409
+f1: 0.8395
+kappa: 0.6034
+auc: 0.8803
+Epoch 30 | Train Loss: 0.5081 | Train Acc: 0.7927 | LR: 0.001000
+avg_sensitivity: 0.8194
+avg_fpr: 0.2042
+avg_accuracy: 0.8099
+avg_recall: 0.8194
+avg_f1: 0.8379
+avg_kappa: 0.6083
+avg_auc: 0.8888
+
+🔍 正在处理文件: data/features/chb05/features.npz
+
+📂 Fold 1/5 (K-Fold)
+sensitivity: 0.7475
+fpr: 0.2455
+accuracy: 0.7503
+recall: 0.7475
+f1: 0.7826
+kappa: 0.4908
+auc: 0.8228
+Epoch 30 | Train Loss: 0.5551 | Train Acc: 0.7415 | LR: 0.001000
+
+📂 Fold 2/5 (K-Fold)
+sensitivity: 0.6988
+fpr: 0.2351
+accuracy: 0.7241
+recall: 0.6988
+f1: 0.7576
+kappa: 0.4428
+auc: 0.7989
+Epoch 30 | Train Loss: 0.5524 | Train Acc: 0.7439 | LR: 0.001000
+
+📂 Fold 3/5 (K-Fold)
+sensitivity: 0.7798
+fpr: 0.2572
+accuracy: 0.7647
+recall: 0.7798
+f1: 0.7973
+kappa: 0.5173
+auc: 0.8169
+Epoch 30 | Train Loss: 0.5591 | Train Acc: 0.7447 | LR: 0.001000
+
+📂 Fold 4/5 (K-Fold)
+sensitivity: 0.7312
+fpr: 0.2282
+accuracy: 0.7481
+recall: 0.7312
+f1: 0.7727
+kappa: 0.4921
+auc: 0.8209
+Epoch 30 | Train Loss: 0.5492 | Train Acc: 0.7483 | LR: 0.001000
+
+📂 Fold 5/5 (K-Fold)
+sensitivity: 0.7786
+fpr: 0.2535
+accuracy: 0.7659
+recall: 0.7786
+f1: 0.8004
+kappa: 0.5178
+auc: 0.8272
+Epoch 30 | Train Loss: 0.5487 | Train Acc: 0.7478 | LR: 0.001000
+avg_sensitivity: 0.7472
+avg_fpr: 0.2439
+avg_accuracy: 0.7506
+avg_recall: 0.7472
+avg_f1: 0.7821
+avg_kappa: 0.4922
+avg_auc: 0.8174
+
+🔍 正在处理文件: data/features/chb06/features.npz
+
+📂 Fold 1/5 (K-Fold)
+sensitivity: 0.8108
+fpr: 0.2683
+accuracy: 0.7800
+recall: 0.8108
+f1: 0.8183
+kappa: 0.5397
+auc: 0.8615
+Epoch 30 | Train Loss: 0.5231 | Train Acc: 0.7770 | LR: 0.001000
+
+📂 Fold 2/5 (K-Fold)
+sensitivity: 0.8324
+fpr: 0.2798
+accuracy: 0.7867
+recall: 0.8324
+f1: 0.8223
+kappa: 0.5557
+auc: 0.8690
+Epoch 30 | Train Loss: 0.5281 | Train Acc: 0.7696 | LR: 0.001000
+
+📂 Fold 3/5 (K-Fold)
+sensitivity: 0.8749
+fpr: 0.3471
+accuracy: 0.7881
+recall: 0.8749
+f1: 0.8342
+kappa: 0.5425
+auc: 0.8655
+Epoch 30 | Train Loss: 0.5269 | Train Acc: 0.7698 | LR: 0.001000
+
+📂 Fold 4/5 (K-Fold)
+sensitivity: 0.8483
+fpr: 0.2863
+accuracy: 0.7940
+recall: 0.8483
+f1: 0.8308
+kappa: 0.5677
+auc: 0.8662
+Epoch 30 | Train Loss: 0.5251 | Train Acc: 0.7727 | LR: 0.001000
+
+📂 Fold 5/5 (K-Fold)
+sensitivity: 0.8875
+fpr: 0.3683
+accuracy: 0.7828
+recall: 0.8875
+f1: 0.8284
+kappa: 0.5361
+auc: 0.8684
+Epoch 30 | Train Loss: 0.5289 | Train Acc: 0.7675 | LR: 0.001000
+avg_sensitivity: 0.8508
+avg_fpr: 0.3100
+avg_accuracy: 0.7863
+avg_recall: 0.8508
+avg_f1: 0.8268
+avg_kappa: 0.5483
+avg_auc: 0.8661
+
+🔍 正在处理文件: data/features/chb07/features.npz
+
+📂 Fold 1/5 (K-Fold)
+sensitivity: 0.9380
+fpr: 0.2291
+accuracy: 0.8731
+recall: 0.9380
+f1: 0.9005
+kappa: 0.7263
+auc: 0.9253
+Epoch 30 | Train Loss: 0.4370 | Train Acc: 0.8750 | LR: 0.001000
+
+📂 Fold 2/5 (K-Fold)
+sensitivity: 0.9300
+fpr: 0.2506
+accuracy: 0.8593
+recall: 0.9300
+f1: 0.8894
+kappa: 0.6970
+auc: 0.9001
+Epoch 30 | Train Loss: 0.4506 | Train Acc: 0.8579 | LR: 0.001000
+
+📂 Fold 3/5 (K-Fold)
+sensitivity: 0.9458
+fpr: 0.2252
+accuracy: 0.8741
+recall: 0.9458
+f1: 0.8971
+kappa: 0.7359
+auc: 0.9228
+Epoch 30 | Train Loss: 0.4444 | Train Acc: 0.8637 | LR: 0.001000
+
+📂 Fold 4/5 (K-Fold)
+sensitivity: 0.9543
+fpr: 0.2246
+accuracy: 0.8843
+recall: 0.9543
+f1: 0.9094
+kappa: 0.7503
+auc: 0.9287
+Epoch 30 | Train Loss: 0.4531 | Train Acc: 0.8537 | LR: 0.001000
+
+📂 Fold 5/5 (K-Fold)
+sensitivity: 0.9404
+fpr: 0.2127
+accuracy: 0.8778
+recall: 0.9404
+f1: 0.9009
+kappa: 0.7422
+auc: 0.9313
+Epoch 30 | Train Loss: 0.4452 | Train Acc: 0.8634 | LR: 0.001000
+avg_sensitivity: 0.9417
+avg_fpr: 0.2284
+avg_accuracy: 0.8737
+avg_recall: 0.9417
+avg_f1: 0.8995
+avg_kappa: 0.7303
+avg_auc: 0.9217
+
+🔍 正在处理文件: data/features/chb08/features.npz
+
+📂 Fold 1/5 (K-Fold)
+sensitivity: 0.9773
+fpr: 0.2969
+accuracy: 0.8644
+recall: 0.9773
+f1: 0.8946
+kappa: 0.7086
+auc: 0.8700
+Epoch 30 | Train Loss: 0.4423 | Train Acc: 0.8703 | LR: 0.001000
+
+📂 Fold 2/5 (K-Fold)
+sensitivity: 0.9807
+fpr: 0.2874
+accuracy: 0.8822
+recall: 0.9807
+f1: 0.9133
+kappa: 0.7323
+auc: 0.8666
+Epoch 30 | Train Loss: 0.4506 | Train Acc: 0.8621 | LR: 0.001000
+
+📂 Fold 3/5 (K-Fold)
+sensitivity: 0.9747
+fpr: 0.2824
+accuracy: 0.8700
+recall: 0.9747
+f1: 0.8989
+kappa: 0.7200
+auc: 0.8693
+Epoch 30 | Train Loss: 0.4488 | Train Acc: 0.8649 | LR: 0.001000
+
+📂 Fold 4/5 (K-Fold)
+sensitivity: 0.9771
+fpr: 0.3400
+accuracy: 0.8450
+recall: 0.9771
+f1: 0.8803
+kappa: 0.6665
+auc: 0.8495
+Epoch 30 | Train Loss: 0.4395 | Train Acc: 0.8712 | LR: 0.001000
+
+📂 Fold 5/5 (K-Fold)
+sensitivity: 0.9816
+fpr: 0.2853
+accuracy: 0.8756
+recall: 0.9816
+f1: 0.9048
+kappa: 0.7282
+auc: 0.8791
+Epoch 30 | Train Loss: 0.4506 | Train Acc: 0.8625 | LR: 0.001000
+avg_sensitivity: 0.9783
+avg_fpr: 0.2984
+avg_accuracy: 0.8674
+avg_recall: 0.9783
+avg_f1: 0.8984
+avg_kappa: 0.7111
+avg_auc: 0.8669
+
+🔍 正在处理文件: data/features/chb09/features.npz
+
+📂 Fold 1/5 (K-Fold)
+sensitivity: 0.8669
+fpr: 0.2552
+accuracy: 0.8181
+recall: 0.8669
+f1: 0.8511
+kappa: 0.6174
+auc: 0.8882
+Epoch 30 | Train Loss: 0.4940 | Train Acc: 0.8092 | LR: 0.001000
+
+📂 Fold 2/5 (K-Fold)
+sensitivity: 0.8678
+fpr: 0.2211
+accuracy: 0.8326
+recall: 0.8678
+f1: 0.8624
+kappa: 0.6489
+auc: 0.9112
+Epoch 30 | Train Loss: 0.4974 | Train Acc: 0.8043 | LR: 0.001000
+
+📂 Fold 3/5 (K-Fold)
+sensitivity: 0.8964
+fpr: 0.2496
+accuracy: 0.8375
+recall: 0.8964
+f1: 0.8681
+kappa: 0.6571
+auc: 0.9099
+Epoch 30 | Train Loss: 0.4979 | Train Acc: 0.8069 | LR: 0.001000
+
+📂 Fold 4/5 (K-Fold)
+sensitivity: 0.8567
+fpr: 0.2183
+accuracy: 0.8271
+recall: 0.8567
+f1: 0.8571
+kappa: 0.6381
+auc: 0.9107
+Epoch 30 | Train Loss: 0.4951 | Train Acc: 0.8042 | LR: 0.001000
+
+📂 Fold 5/5 (K-Fold)
+sensitivity: 0.9029
+fpr: 0.2991
+accuracy: 0.8208
+recall: 0.9029
+f1: 0.8568
+kappa: 0.6192
+auc: 0.9160
+Epoch 30 | Train Loss: 0.4898 | Train Acc: 0.8125 | LR: 0.001000
+avg_sensitivity: 0.8781
+avg_fpr: 0.2487
+avg_accuracy: 0.8272
+avg_recall: 0.8781
+avg_f1: 0.8591
+avg_kappa: 0.6361
+avg_auc: 0.9072
+
+🔍 正在处理文件: data/features/chb10/features.npz
+
+📂 Fold 1/5 (K-Fold)
+sensitivity: 0.8393
+fpr: 0.2632
+accuracy: 0.7991
+recall: 0.8393
+f1: 0.8355
+kappa: 0.5776
+auc: 0.8624
+Epoch 30 | Train Loss: 0.5138 | Train Acc: 0.7905 | LR: 0.001000
+
+📂 Fold 2/5 (K-Fold)
+sensitivity: 0.8799
+fpr: 0.3294
+accuracy: 0.7952
+recall: 0.8799
+f1: 0.8364
+kappa: 0.5643
+auc: 0.8680
+Epoch 30 | Train Loss: 0.5199 | Train Acc: 0.7842 | LR: 0.001000
+
+📂 Fold 3/5 (K-Fold)
+sensitivity: 0.8635
+fpr: 0.2762
+accuracy: 0.8091
+recall: 0.8635
+f1: 0.8467
+kappa: 0.5939
+auc: 0.8704
+Epoch 30 | Train Loss: 0.5172 | Train Acc: 0.7885 | LR: 0.001000
+
+📂 Fold 4/5 (K-Fold)
+sensitivity: 0.8768
+fpr: 0.2924
+accuracy: 0.8079
+recall: 0.8768
+f1: 0.8440
+kappa: 0.5949
+auc: 0.8755
+Epoch 30 | Train Loss: 0.5164 | Train Acc: 0.7885 | LR: 0.001000
+
+📂 Fold 5/5 (K-Fold)
+sensitivity: 0.9184
+fpr: 0.3685
+accuracy: 0.8019
+recall: 0.9184
+f1: 0.8463
+kappa: 0.5725
+auc: 0.8647
+Epoch 30 | Train Loss: 0.5137 | Train Acc: 0.7901 | LR: 0.001000
+avg_sensitivity: 0.8756
+avg_fpr: 0.3059
+avg_accuracy: 0.8026
+avg_recall: 0.8756
+avg_f1: 0.8418
+avg_kappa: 0.5806
+avg_auc: 0.8682
+
+🔍 正在处理文件: data/features/chb11/features.npz
+
+📂 Fold 1/5 (K-Fold)
+sensitivity: 0.9234
+fpr: 0.1472
+accuracy: 0.8970
+recall: 0.9234
+f1: 0.9183
+kappa: 0.7792
+auc: 0.9263
+Epoch 30 | Train Loss: 0.4471 | Train Acc: 0.8561 | LR: 0.001000
+
+📂 Fold 2/5 (K-Fold)
+sensitivity: 0.9647
+fpr: 0.1866
+accuracy: 0.9041
+recall: 0.9647
+f1: 0.9234
+kappa: 0.7957
+auc: 0.9075
+Epoch 30 | Train Loss: 0.4325 | Train Acc: 0.8748 | LR: 0.001000
+
+📂 Fold 3/5 (K-Fold)
+sensitivity: 0.9573
+fpr: 0.1707
+accuracy: 0.9055
+recall: 0.9573
+f1: 0.9234
+kappa: 0.8004
+auc: 0.9405
+Epoch 30 | Train Loss: 0.4526 | Train Acc: 0.8568 | LR: 0.001000
+
+📂 Fold 4/5 (K-Fold)
+sensitivity: 0.9413
+fpr: 0.1696
+accuracy: 0.8970
+recall: 0.9413
+f1: 0.9166
+kappa: 0.7824
+auc: 0.9357
+Epoch 30 | Train Loss: 0.4272 | Train Acc: 0.8917 | LR: 0.001000
+
+📂 Fold 5/5 (K-Fold)
+sensitivity: 0.9415
+fpr: 0.1538
+accuracy: 0.9013
+recall: 0.9415
+f1: 0.9169
+kappa: 0.7955
+auc: 0.9313
+Epoch 30 | Train Loss: 0.4440 | Train Acc: 0.8709 | LR: 0.001000
+avg_sensitivity: 0.9457
+avg_fpr: 0.1656
+avg_accuracy: 0.9010
+avg_recall: 0.9457
+avg_f1: 0.9197
+avg_kappa: 0.7907
+avg_auc: 0.9283
+
+🔍 正在处理文件: data/features/chb12/features.npz
+
+📂 Fold 1/5 (K-Fold)
+sensitivity: 0.8929
+fpr: 0.3615
+accuracy: 0.7911
+recall: 0.8929
+f1: 0.8368
+kappa: 0.5498
+auc: 0.8713
+Epoch 30 | Train Loss: 0.5150 | Train Acc: 0.7850 | LR: 0.001000
+
+📂 Fold 2/5 (K-Fold)
+sensitivity: 0.8661
+fpr: 0.2710
+accuracy: 0.8113
+recall: 0.8661
+f1: 0.8464
+kappa: 0.6022
+auc: 0.8875
+Epoch 30 | Train Loss: 0.5179 | Train Acc: 0.7850 | LR: 0.001000
+
+📂 Fold 3/5 (K-Fold)
+sensitivity: 0.8613
+fpr: 0.2818
+accuracy: 0.8039
+recall: 0.8613
+f1: 0.8402
+kappa: 0.5867
+auc: 0.8870
+Epoch 30 | Train Loss: 0.5178 | Train Acc: 0.7863 | LR: 0.001000
+
+📂 Fold 4/5 (K-Fold)
+sensitivity: 0.8604
+fpr: 0.2974
+accuracy: 0.7985
+recall: 0.8604
+f1: 0.8385
+kappa: 0.5712
+auc: 0.8772
+Epoch 30 | Train Loss: 0.5143 | Train Acc: 0.7898 | LR: 0.001000
+
+📂 Fold 5/5 (K-Fold)
+sensitivity: 0.8795
+fpr: 0.3126
+accuracy: 0.8014
+recall: 0.8795
+f1: 0.8401
+kappa: 0.5794
+auc: 0.8782
+Epoch 30 | Train Loss: 0.5133 | Train Acc: 0.7897 | LR: 0.001000
+avg_sensitivity: 0.8720
+avg_fpr: 0.3049
+avg_accuracy: 0.8012
+avg_recall: 0.8720
+avg_f1: 0.8404
+avg_kappa: 0.5779
+avg_auc: 0.8802
+
+🔍 正在处理文件: data/features/chb13/features.npz
+
+📂 Fold 1/5 (K-Fold)
+sensitivity: 0.8930
+fpr: 0.2451
+accuracy: 0.8364
+recall: 0.8930
+f1: 0.8656
+kappa: 0.6570
+auc: 0.9211
+Epoch 30 | Train Loss: 0.4833 | Train Acc: 0.8205 | LR: 0.001000
+
+📂 Fold 2/5 (K-Fold)
+sensitivity: 0.8765
+fpr: 0.2041
+accuracy: 0.8451
+recall: 0.8765
+f1: 0.8735
+kappa: 0.6737
+auc: 0.9261
+Epoch 30 | Train Loss: 0.4830 | Train Acc: 0.8217 | LR: 0.001000
+
+📂 Fold 3/5 (K-Fold)
+sensitivity: 0.9383
+fpr: 0.3107
+accuracy: 0.8412
+recall: 0.9383
+f1: 0.8782
+kappa: 0.6528
+auc: 0.9286
+Epoch 30 | Train Loss: 0.4846 | Train Acc: 0.8173 | LR: 0.001000
+
+📂 Fold 4/5 (K-Fold)
+sensitivity: 0.8899
+fpr: 0.2012
+accuracy: 0.8531
+recall: 0.8899
+f1: 0.8784
+kappa: 0.6931
+auc: 0.9288
+Epoch 30 | Train Loss: 0.4857 | Train Acc: 0.8157 | LR: 0.001000
+
+📂 Fold 5/5 (K-Fold)
+sensitivity: 0.8989
+fpr: 0.2738
+accuracy: 0.8287
+recall: 0.8989
+f1: 0.8617
+kappa: 0.6377
+auc: 0.9064
+Epoch 30 | Train Loss: 0.4816 | Train Acc: 0.8223 | LR: 0.001000
+avg_sensitivity: 0.8993
+avg_fpr: 0.2470
+avg_accuracy: 0.8409
+avg_recall: 0.8993
+avg_f1: 0.8715
+avg_kappa: 0.6629
+avg_auc: 0.9222
+
+🔍 正在处理文件: data/features/chb14/features.npz
+
+📂 Fold 1/5 (K-Fold)
+sensitivity: 0.7690
+fpr: 0.2107
+accuracy: 0.7771
+recall: 0.7690
+f1: 0.8059
+kappa: 0.5457
+auc: 0.8625
+Epoch 30 | Train Loss: 0.5298 | Train Acc: 0.7698 | LR: 0.001000
+
+📂 Fold 2/5 (K-Fold)
+sensitivity: 0.7324
+fpr: 0.1757
+accuracy: 0.7702
+recall: 0.7324
+f1: 0.7897
+kappa: 0.5397
+auc: 0.8539
+Epoch 30 | Train Loss: 0.5213 | Train Acc: 0.7808 | LR: 0.001000
+
+📂 Fold 3/5 (K-Fold)
+sensitivity: 0.7385
+fpr: 0.1706
+accuracy: 0.7735
+recall: 0.7385
+f1: 0.8005
+kappa: 0.5427
+auc: 0.8626
+Epoch 30 | Train Loss: 0.5263 | Train Acc: 0.7683 | LR: 0.001000
+
+📂 Fold 4/5 (K-Fold)
+sensitivity: 0.7475
+fpr: 0.1724
+accuracy: 0.7797
+recall: 0.7475
+f1: 0.8024
+kappa: 0.5565
+auc: 0.8630
+Epoch 30 | Train Loss: 0.5235 | Train Acc: 0.7725 | LR: 0.001000
+
+📂 Fold 5/5 (K-Fold)
+sensitivity: 0.7865
+fpr: 0.1786
+accuracy: 0.8006
+recall: 0.7865
+f1: 0.8245
+kappa: 0.5949
+auc: 0.8712
+Epoch 30 | Train Loss: 0.5302 | Train Acc: 0.7657 | LR: 0.001000
+avg_sensitivity: 0.7548
+avg_fpr: 0.1816
+avg_accuracy: 0.7802
+avg_recall: 0.7548
+avg_f1: 0.8046
+avg_kappa: 0.5559
+avg_auc: 0.8626
+
+🔍 正在处理文件: data/features/chb15/features.npz
+
+📂 Fold 1/5 (K-Fold)
+sensitivity: 0.7355
+fpr: 0.1436
+accuracy: 0.7834
+recall: 0.7355
+f1: 0.8040
+kappa: 0.5665
+auc: 0.8528
+Epoch 30 | Train Loss: 0.5365 | Train Acc: 0.7639 | LR: 0.001000
+
+📂 Fold 2/5 (K-Fold)
+sensitivity: 0.7189
+fpr: 0.1388
+accuracy: 0.7754
+recall: 0.7189
+f1: 0.7943
+kappa: 0.5529
+auc: 0.8408
+Epoch 30 | Train Loss: 0.5388 | Train Acc: 0.7590 | LR: 0.001000
+
+📂 Fold 3/5 (K-Fold)
+sensitivity: 0.7051
+fpr: 0.1396
+accuracy: 0.7670
+recall: 0.7051
+f1: 0.7844
+kappa: 0.5379
+auc: 0.8435
+Epoch 30 | Train Loss: 0.5332 | Train Acc: 0.7672 | LR: 0.001000
+
+📂 Fold 4/5 (K-Fold)
+sensitivity: 0.7210
+fpr: 0.1394
+accuracy: 0.7764
+recall: 0.7210
+f1: 0.7955
+kappa: 0.5545
+auc: 0.8396
+Epoch 30 | Train Loss: 0.5356 | Train Acc: 0.7650 | LR: 0.001000
+
+📂 Fold 5/5 (K-Fold)
+sensitivity: 0.7227
+fpr: 0.1460
+accuracy: 0.7768
+recall: 0.7227
+f1: 0.7920
+kappa: 0.5558
+auc: 0.8460
+Epoch 30 | Train Loss: 0.5336 | Train Acc: 0.7633 | LR: 0.001000
+avg_sensitivity: 0.7206
+avg_fpr: 0.1415
+avg_accuracy: 0.7758
+avg_recall: 0.7206
+avg_f1: 0.7941
+avg_kappa: 0.5535
+avg_auc: 0.8445
+
+🔍 正在处理文件: data/features/chb16/features.npz
+
+📂 Fold 1/5 (K-Fold)
+sensitivity: 0.9227
+fpr: 0.3748
+accuracy: 0.8045
+recall: 0.9227
+f1: 0.8505
+kappa: 0.5730
+auc: 0.8161
+Epoch 30 | Train Loss: 0.5176 | Train Acc: 0.7921 | LR: 0.001000
+
+📂 Fold 2/5 (K-Fold)
+sensitivity: 0.9168
+fpr: 0.3868
+accuracy: 0.7947
+recall: 0.9168
+f1: 0.8422
+kappa: 0.5538
+auc: 0.8224
+Epoch 30 | Train Loss: 0.5200 | Train Acc: 0.7885 | LR: 0.001000
+
+📂 Fold 3/5 (K-Fold)
+sensitivity: 0.9193
+fpr: 0.3861
+accuracy: 0.8010
+recall: 0.9193
+f1: 0.8498
+kappa: 0.5598
+auc: 0.8102
+Epoch 30 | Train Loss: 0.5229 | Train Acc: 0.7863 | LR: 0.001000
+
+📂 Fold 4/5 (K-Fold)
+sensitivity: 0.8887
+fpr: 0.3417
+accuracy: 0.7954
+recall: 0.8887
+f1: 0.8379
+kappa: 0.5630
+auc: 0.8162
+Epoch 30 | Train Loss: 0.5168 | Train Acc: 0.7912 | LR: 0.001000
+
+📂 Fold 5/5 (K-Fold)
+sensitivity: 0.9142
+fpr: 0.3582
+accuracy: 0.8031
+recall: 0.9142
+f1: 0.8461
+kappa: 0.5769
+auc: 0.8232
+Epoch 30 | Train Loss: 0.5230 | Train Acc: 0.7857 | LR: 0.001000
+avg_sensitivity: 0.9123
+avg_fpr: 0.3695
+avg_accuracy: 0.7997
+avg_recall: 0.9123
+avg_f1: 0.8453
+avg_kappa: 0.5653
+avg_auc: 0.8176
+
+🔍 正在处理文件: data/features/chb17/features.npz
+
+📂 Fold 1/5 (K-Fold)
+sensitivity: 0.9334
+fpr: 0.3795
+accuracy: 0.8120
+recall: 0.9334
+f1: 0.8587
+kappa: 0.5833
+auc: 0.8357
+Epoch 30 | Train Loss: 0.4864 | Train Acc: 0.8225 | LR: 0.001000
+
+📂 Fold 2/5 (K-Fold)
+sensitivity: 0.9482
+fpr: 0.3452
+accuracy: 0.8333
+recall: 0.9482
+f1: 0.8738
+kappa: 0.6329
+auc: 0.8543
+Epoch 30 | Train Loss: 0.4858 | Train Acc: 0.8220 | LR: 0.001000
+
+📂 Fold 3/5 (K-Fold)
+sensitivity: 0.9697
+fpr: 0.3841
+accuracy: 0.8213
+recall: 0.9697
+f1: 0.8630
+kappa: 0.6148
+auc: 0.8348
+Epoch 30 | Train Loss: 0.4897 | Train Acc: 0.8192 | LR: 0.001000
+
+📂 Fold 4/5 (K-Fold)
+sensitivity: 0.9269
+fpr: 0.3688
+accuracy: 0.8111
+recall: 0.9269
+f1: 0.8565
+kappa: 0.5847
+auc: 0.8365
+Epoch 30 | Train Loss: 0.4849 | Train Acc: 0.8213 | LR: 0.001000
+
+📂 Fold 5/5 (K-Fold)
+sensitivity: 0.9655
+fpr: 0.3756
+accuracy: 0.8259
+recall: 0.9655
+f1: 0.8676
+kappa: 0.6210
+auc: 0.8521
+Epoch 30 | Train Loss: 0.4899 | Train Acc: 0.8215 | LR: 0.001000
+avg_sensitivity: 0.9488
+avg_fpr: 0.3706
+avg_accuracy: 0.8207
+avg_recall: 0.9488
+avg_f1: 0.8639
+avg_kappa: 0.6073
+avg_auc: 0.8427
+
+🔍 正在处理文件: data/features/chb18/features.npz
+
+📂 Fold 1/5 (K-Fold)
+sensitivity: 0.8597
+fpr: 0.1681
+accuracy: 0.8494
+recall: 0.8597
+f1: 0.8775
+kappa: 0.6823
+auc: 0.9280
+Epoch 30 | Train Loss: 0.4753 | Train Acc: 0.8270 | LR: 0.001000
+
+📂 Fold 2/5 (K-Fold)
+sensitivity: 0.8017
+fpr: 0.1220
+accuracy: 0.8318
+recall: 0.8017
+f1: 0.8523
+kappa: 0.6587
+auc: 0.9130
+Epoch 30 | Train Loss: 0.4839 | Train Acc: 0.8219 | LR: 0.001000
+
+📂 Fold 3/5 (K-Fold)
+sensitivity: 0.8211
+fpr: 0.1681
+accuracy: 0.8256
+recall: 0.8211
+f1: 0.8469
+kappa: 0.6447
+auc: 0.9051
+Epoch 30 | Train Loss: 0.4817 | Train Acc: 0.8208 | LR: 0.001000
+
+📂 Fold 4/5 (K-Fold)
+sensitivity: 0.8529
+fpr: 0.1909
+accuracy: 0.8344
+recall: 0.8529
+f1: 0.8560
+kappa: 0.6611
+auc: 0.9121
+Epoch 30 | Train Loss: 0.4793 | Train Acc: 0.8248 | LR: 0.001000
+
+📂 Fold 5/5 (K-Fold)
+sensitivity: 0.8333
+fpr: 0.1341
+accuracy: 0.8463
+recall: 0.8333
+f1: 0.8672
+kappa: 0.6854
+auc: 0.9288
+Epoch 30 | Train Loss: 0.4796 | Train Acc: 0.8234 | LR: 0.001000
+avg_sensitivity: 0.8338
+avg_fpr: 0.1567
+avg_accuracy: 0.8375
+avg_recall: 0.8338
+avg_f1: 0.8600
+avg_kappa: 0.6664
+avg_auc: 0.9174
+
+🔍 正在处理文件: data/features/chb19/features.npz
+
+📂 Fold 1/5 (K-Fold)
+sensitivity: 0.9168
+fpr: 0.0694
+accuracy: 0.9222
+recall: 0.9168
+f1: 0.9352
+kappa: 0.8378
+auc: 0.9684
+Epoch 30 | Train Loss: 0.4176 | Train Acc: 0.8955 | LR: 0.001000
+
+📂 Fold 2/5 (K-Fold)
+sensitivity: 0.9191
+fpr: 0.0802
+accuracy: 0.9194
+recall: 0.9191
+f1: 0.9326
+kappa: 0.8323
+auc: 0.9627
+Epoch 30 | Train Loss: 0.4242 | Train Acc: 0.8865 | LR: 0.001000
+
+📂 Fold 3/5 (K-Fold)
+sensitivity: 0.9443
+fpr: 0.0887
+accuracy: 0.9305
+recall: 0.9443
+f1: 0.9405
+kappa: 0.8569
+auc: 0.9803
+Epoch 30 | Train Loss: 0.4268 | Train Acc: 0.8835 | LR: 0.001000
+
+📂 Fold 4/5 (K-Fold)
+sensitivity: 0.9159
+fpr: 0.0988
+accuracy: 0.9101
+recall: 0.9159
+f1: 0.9251
+kappa: 0.8127
+auc: 0.9703
+Epoch 30 | Train Loss: 0.4245 | Train Acc: 0.8881 | LR: 0.001000
+
+📂 Fold 5/5 (K-Fold)
+sensitivity: 0.9045
+fpr: 0.0523
+accuracy: 0.9222
+recall: 0.9045
+f1: 0.9323
+kappa: 0.8410
+auc: 0.9747
+Epoch 30 | Train Loss: 0.4243 | Train Acc: 0.8832 | LR: 0.001000
+avg_sensitivity: 0.9201
+avg_fpr: 0.0779
+avg_accuracy: 0.9209
+avg_recall: 0.9201
+avg_f1: 0.9331
+avg_kappa: 0.8362
+avg_auc: 0.9713
+
+🔍 正在处理文件: data/features/chb20/features.npz
+
+📂 Fold 1/5 (K-Fold)
+sensitivity: 0.9646
+fpr: 0.1658
+accuracy: 0.9136
+recall: 0.9646
+f1: 0.9315
+kappa: 0.8149
+auc: 0.9659
+Epoch 30 | Train Loss: 0.3981 | Train Acc: 0.9126 | LR: 0.001000
+
+📂 Fold 2/5 (K-Fold)
+sensitivity: 0.9659
+fpr: 0.1057
+accuracy: 0.9372
+recall: 0.9659
+f1: 0.9485
+kappa: 0.8681
+auc: 0.9759
+Epoch 30 | Train Loss: 0.3938 | Train Acc: 0.9188 | LR: 0.001000
+
+📂 Fold 3/5 (K-Fold)
+sensitivity: 0.9774
+fpr: 0.1582
+accuracy: 0.9242
+recall: 0.9774
+f1: 0.9400
+kappa: 0.8375
+auc: 0.9714
+Epoch 30 | Train Loss: 0.3968 | Train Acc: 0.9139 | LR: 0.001000
+
+📂 Fold 4/5 (K-Fold)
+sensitivity: 0.9667
+fpr: 0.1187
+accuracy: 0.9317
+recall: 0.9667
+f1: 0.9435
+kappa: 0.8573
+auc: 0.9676
+Epoch 30 | Train Loss: 0.3991 | Train Acc: 0.9131 | LR: 0.001000
+
+📂 Fold 5/5 (K-Fold)
+sensitivity: 0.9650
+fpr: 0.1288
+accuracy: 0.9270
+recall: 0.9650
+f1: 0.9402
+kappa: 0.8467
+auc: 0.9701
+Epoch 30 | Train Loss: 0.3968 | Train Acc: 0.9141 | LR: 0.001000
+avg_sensitivity: 0.9679
+avg_fpr: 0.1354
+avg_accuracy: 0.9267
+avg_recall: 0.9679
+avg_f1: 0.9407
+avg_kappa: 0.8449
+avg_auc: 0.9702
+
+🔍 正在处理文件: data/features/chb21/features.npz
+
+📂 Fold 1/5 (K-Fold)
+sensitivity: 0.8960
+fpr: 0.4146
+accuracy: 0.7721
+recall: 0.8960
+f1: 0.8253
+kappa: 0.5031
+auc: 0.8322
+Epoch 30 | Train Loss: 0.5386 | Train Acc: 0.7618 | LR: 0.001000
+
+📂 Fold 2/5 (K-Fold)
+sensitivity: 0.9133
+fpr: 0.4721
+accuracy: 0.7596
+recall: 0.9133
+f1: 0.8204
+kappa: 0.4681
+auc: 0.8082
+Epoch 30 | Train Loss: 0.5319 | Train Acc: 0.7686 | LR: 0.001000
+
+📂 Fold 3/5 (K-Fold)
+sensitivity: 0.9280
+fpr: 0.4377
+accuracy: 0.7811
+recall: 0.9280
+f1: 0.8353
+kappa: 0.5184
+auc: 0.8229
+Epoch 30 | Train Loss: 0.5281 | Train Acc: 0.7747 | LR: 0.001000
+
+📂 Fold 4/5 (K-Fold)
+sensitivity: 0.9277
+fpr: 0.4472
+accuracy: 0.7797
+recall: 0.9277
+f1: 0.8360
+kappa: 0.5103
+auc: 0.8203
+Epoch 30 | Train Loss: 0.5344 | Train Acc: 0.7655 | LR: 0.001000
+
+📂 Fold 5/5 (K-Fold)
+sensitivity: 0.9345
+fpr: 0.4349
+accuracy: 0.7846
+recall: 0.9345
+f1: 0.8375
+kappa: 0.5279
+auc: 0.8325
+Epoch 30 | Train Loss: 0.5356 | Train Acc: 0.7681 | LR: 0.001000
+avg_sensitivity: 0.9199
+avg_fpr: 0.4413
+avg_accuracy: 0.7754
+avg_recall: 0.9199
+avg_f1: 0.8309
+avg_kappa: 0.5056
+avg_auc: 0.8232
+
+🔍 正在处理文件: data/features/chb22/features.npz
+
+📂 Fold 1/5 (K-Fold)
+sensitivity: 0.9850
+fpr: 0.5633
+accuracy: 0.7757
+recall: 0.9850
+f1: 0.8445
+kappa: 0.4702
+auc: 0.7508
+Epoch 30 | Train Loss: 0.5071 | Train Acc: 0.7968 | LR: 0.001000
+
+📂 Fold 2/5 (K-Fold)
+sensitivity: 0.9781
+fpr: 0.4406
+accuracy: 0.8148
+recall: 0.9781
+f1: 0.8657
+kappa: 0.5800
+auc: 0.8086
+Epoch 30 | Train Loss: 0.5242 | Train Acc: 0.7816 | LR: 0.001000
+
+📂 Fold 3/5 (K-Fold)
+sensitivity: 0.9504
+fpr: 0.4522
+accuracy: 0.7901
+recall: 0.9504
+f1: 0.8450
+kappa: 0.5322
+auc: 0.8286
+Epoch 30 | Train Loss: 0.5246 | Train Acc: 0.7775 | LR: 0.001000
+
+📂 Fold 4/5 (K-Fold)
+sensitivity: 0.9701
+fpr: 0.4913
+accuracy: 0.7788
+recall: 0.9701
+f1: 0.8370
+kappa: 0.5124
+auc: 0.8141
+Epoch 30 | Train Loss: 0.5178 | Train Acc: 0.7912 | LR: 0.001000
+
+📂 Fold 5/5 (K-Fold)
+sensitivity: 0.9894
+fpr: 0.5223
+accuracy: 0.7767
+recall: 0.9894
+f1: 0.8382
+kappa: 0.5041
+auc: 0.8072
+Epoch 30 | Train Loss: 0.5098 | Train Acc: 0.7963 | LR: 0.001000
+avg_sensitivity: 0.9746
+avg_fpr: 0.4940
+avg_accuracy: 0.7872
+avg_recall: 0.9746
+avg_f1: 0.8461
+avg_kappa: 0.5198
+avg_auc: 0.8019
+
+🔍 正在处理文件: data/features/chb23/features.npz
+
+📂 Fold 1/5 (K-Fold)
+sensitivity: 0.9507
+fpr: 0.4320
+accuracy: 0.8003
+recall: 0.9507
+f1: 0.8525
+kappa: 0.5535
+auc: 0.8462
+Epoch 30 | Train Loss: 0.5200 | Train Acc: 0.7835 | LR: 0.001000
+
+📂 Fold 2/5 (K-Fold)
+sensitivity: 0.9408
+fpr: 0.3950
+accuracy: 0.8089
+recall: 0.9408
+f1: 0.8567
+kappa: 0.5767
+auc: 0.8409
+Epoch 30 | Train Loss: 0.5164 | Train Acc: 0.7912 | LR: 0.001000
+
+📂 Fold 3/5 (K-Fold)
+sensitivity: 0.9555
+fpr: 0.4243
+accuracy: 0.8021
+recall: 0.9555
+f1: 0.8519
+kappa: 0.5638
+auc: 0.8258
+Epoch 30 | Train Loss: 0.5184 | Train Acc: 0.7844 | LR: 0.001000
+
+📂 Fold 4/5 (K-Fold)
+sensitivity: 0.9415
+fpr: 0.4574
+accuracy: 0.7815
+recall: 0.9415
+f1: 0.8377
+kappa: 0.5156
+auc: 0.8195
+Epoch 30 | Train Loss: 0.5154 | Train Acc: 0.7883 | LR: 0.001000
+
+📂 Fold 5/5 (K-Fold)
+sensitivity: 0.9515
+fpr: 0.4399
+accuracy: 0.7914
+recall: 0.9515
+f1: 0.8435
+kappa: 0.5425
+auc: 0.8296
+Epoch 30 | Train Loss: 0.5172 | Train Acc: 0.7877 | LR: 0.001000
+avg_sensitivity: 0.9480
+avg_fpr: 0.4297
+avg_accuracy: 0.7968
+avg_recall: 0.9480
+avg_f1: 0.8485
+avg_kappa: 0.5504
+avg_auc: 0.8324
+📊 所有患者平均指标：
+final_avg_avg_sensitivity: 0.8853
+final_avg_avg_fpr: 0.2524
+final_avg_avg_accuracy: 0.8301
+final_avg_avg_recall: 0.8853
+final_avg_avg_f1: 0.8616
+final_avg_avg_kappa: 0.6408
+final_avg_avg_auc: 0.8837

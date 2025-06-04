@@ -1,0 +1,12 @@
+
+🔍 正在处理文件: data/features/chb01/features.npz
+Traceback (most recent call last):
+  File "/home/xulei/xulei/dataset-distillation/Epilepsy/train_kf.py", line 152, in <module>
+    main(args)
+  File "/home/xulei/xulei/dataset-distillation/Epilepsy/train_kf.py", line 129, in main
+    avg_metrics = train_one_patient(args, input_file)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xulei/xulei/dataset-distillation/Epilepsy/train_kf.py", line 70, in train_one_patient
+    kf = KFold(n_splits=args.k_folds, shuffle=True, random_state=42)
+                        ^^^^^^^^^^^^
+AttributeError: 'Namespace' object has no attribute 'k_folds'

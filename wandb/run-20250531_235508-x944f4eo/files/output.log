@@ -1,0 +1,19 @@
+
+🔍 正在处理文件: data/features/chb01/features.npz
+
+📂 Fold 1/12585 (Leave-One-Out)
+/home/xulei/miniconda3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:407: UserWarning: A single label was found in 'y_true' and 'y_pred'. For the confusion matrix to have the correct shape, use the 'labels' parameter to pass all known labels.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/home/xulei/xulei/dataset-distillation/Epilepsy/train_lo.py", line 167, in <module>
+    main(args)
+  File "/home/xulei/xulei/dataset-distillation/Epilepsy/train_lo.py", line 140, in main
+    acc, std, avg_metrics = train_one_patient(args, input_file)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xulei/xulei/dataset-distillation/Epilepsy/train_lo.py", line 94, in train_one_patient
+    metrics = evaluate_metrics(y_true, y_pred, y_prob)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xulei/xulei/dataset-distillation/Epilepsy/utils/train_utils.py", line 43, in evaluate_metrics
+    tn, fp, fn, tp = confusion_matrix(y_true, y_pred).ravel()
+    ^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 4, got 1)

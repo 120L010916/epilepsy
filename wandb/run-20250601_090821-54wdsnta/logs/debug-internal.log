@@ -1,0 +1,16 @@
+{"time":"2025-06-01T09:08:21.283739755+08:00","level":"INFO","msg":"stream: starting","core version":"0.19.4","symlink path":"/home/xulei/xulei/dataset-distillation/Epilepsy/wandb/run-20250601_090821-54wdsnta/logs/debug-core.log"}
+{"time":"2025-06-01T09:08:22.398209048+08:00","level":"INFO","msg":"created new stream","id":"54wdsnta"}
+{"time":"2025-06-01T09:08:22.398256689+08:00","level":"INFO","msg":"stream: started","id":"54wdsnta"}
+{"time":"2025-06-01T09:08:22.398331491+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"54wdsnta"}
+{"time":"2025-06-01T09:08:22.398368922+08:00","level":"INFO","msg":"handler: started","stream_id":"54wdsnta"}
+{"time":"2025-06-01T09:08:22.398441754+08:00","level":"INFO","msg":"sender: started","stream_id":"54wdsnta"}
+{"time":"2025-06-01T09:08:22.743991716+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-01T09:18:46.078114546+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-01T09:18:46.078616749+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-01T09:18:47.078679539+08:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading wandb-summary.json","runtime_seconds":0.306576296,"progress":"1.0MB/2.8MB"},{"desc":"uploading config.yaml","runtime_seconds":0.04344544,"progress":"712B/712B"}],"total_operations":2}}
+{"time":"2025-06-01T09:18:49.426708036+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-01T09:18:52.524976575+08:00","level":"INFO","msg":"stream: closing","id":"54wdsnta"}
+{"time":"2025-06-01T09:18:52.525006696+08:00","level":"INFO","msg":"handler: closed","stream_id":"54wdsnta"}
+{"time":"2025-06-01T09:18:52.525017646+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"54wdsnta"}
+{"time":"2025-06-01T09:18:52.525050087+08:00","level":"INFO","msg":"sender: closed","stream_id":"54wdsnta"}
+{"time":"2025-06-01T09:18:52.525134509+08:00","level":"INFO","msg":"stream: closed","id":"54wdsnta"}

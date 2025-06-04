@@ -1,0 +1,676 @@
+nohup: ignoring input
+
+🔍 正在处理文件: data/features/chb01/features.npz
+
+📂 Fold 1/2 (K-Fold)
+🛑 Early stopping triggered at epoch 45
+sensitivity: 0.9665
+fpr: 0.0028
+accuracy: 0.9787
+recall: 0.9665
+f1: 0.9820
+kappa: 0.9559
+auc: 0.9623
+
+📂 Fold 2/2 (K-Fold)
+🛑 Early stopping triggered at epoch 18
+sensitivity: 0.9686
+fpr: 0.0012
+accuracy: 0.9808
+recall: 0.9686
+f1: 0.9837
+kappa: 0.9603
+auc: 0.9530
+avg_sensitivity: 0.9676
+avg_fpr: 0.0020
+avg_accuracy: 0.9797
+avg_recall: 0.9676
+avg_f1: 0.9829
+avg_kappa: 0.9581
+avg_auc: 0.9576
+
+🔍 正在处理文件: data/features/chb02/features.npz
+
+📂 Fold 1/2 (K-Fold)
+🛑 Early stopping triggered at epoch 18
+sensitivity: 0.9316
+fpr: 0.1095
+accuracy: 0.9156
+recall: 0.9316
+f1: 0.9309
+kappa: 0.8224
+auc: 0.8823
+
+📂 Fold 2/2 (K-Fold)
+🛑 Early stopping triggered at epoch 80
+sensitivity: 0.8327
+fpr: 0.0056
+accuracy: 0.8991
+recall: 0.8327
+f1: 0.9068
+kappa: 0.7987
+auc: 0.8980
+avg_sensitivity: 0.8822
+avg_fpr: 0.0576
+avg_accuracy: 0.9073
+avg_recall: 0.8822
+avg_f1: 0.9189
+avg_kappa: 0.8106
+avg_auc: 0.8901
+
+🔍 正在处理文件: data/features/chb03/features.npz
+
+📂 Fold 1/2 (K-Fold)
+🛑 Early stopping triggered at epoch 30
+sensitivity: 0.8900
+fpr: 0.0042
+accuracy: 0.9314
+recall: 0.8900
+f1: 0.9405
+kappa: 0.8601
+auc: 0.8899
+
+📂 Fold 2/2 (K-Fold)
+🛑 Early stopping triggered at epoch 34
+sensitivity: 0.8980
+fpr: 0.0084
+accuracy: 0.9362
+recall: 0.8980
+f1: 0.9433
+kappa: 0.8709
+auc: 0.8926
+avg_sensitivity: 0.8940
+avg_fpr: 0.0063
+avg_accuracy: 0.9338
+avg_recall: 0.8940
+avg_f1: 0.9419
+avg_kappa: 0.8655
+avg_auc: 0.8912
+
+🔍 正在处理文件: data/features/chb04/features.npz
+
+📂 Fold 1/2 (K-Fold)
+🛑 Early stopping triggered at epoch 40
+sensitivity: 0.8949
+fpr: 0.0525
+accuracy: 0.9158
+recall: 0.8949
+f1: 0.9276
+kappa: 0.8273
+auc: 0.8735
+
+📂 Fold 2/2 (K-Fold)
+🛑 Early stopping triggered at epoch 183
+sensitivity: 0.9306
+fpr: 0.0317
+accuracy: 0.9458
+recall: 0.9306
+f1: 0.9535
+kappa: 0.8886
+auc: 0.9039
+avg_sensitivity: 0.9128
+avg_fpr: 0.0421
+avg_accuracy: 0.9308
+avg_recall: 0.9128
+avg_f1: 0.9405
+avg_kappa: 0.8579
+avg_auc: 0.8887
+
+🔍 正在处理文件: data/features/chb05/features.npz
+
+📂 Fold 1/2 (K-Fold)
+🛑 Early stopping triggered at epoch 150
+sensitivity: 0.8902
+fpr: 0.1016
+accuracy: 0.8934
+recall: 0.8902
+f1: 0.9101
+kappa: 0.7794
+auc: 0.8564
+
+📂 Fold 2/2 (K-Fold)
+🛑 Early stopping triggered at epoch 131
+sensitivity: 0.8880
+fpr: 0.0685
+accuracy: 0.9057
+recall: 0.8880
+f1: 0.9179
+kappa: 0.8073
+auc: 0.8534
+avg_sensitivity: 0.8891
+avg_fpr: 0.0851
+avg_accuracy: 0.8996
+avg_recall: 0.8891
+avg_f1: 0.9140
+avg_kappa: 0.7934
+avg_auc: 0.8549
+
+🔍 正在处理文件: data/features/chb06/features.npz
+
+📂 Fold 1/2 (K-Fold)
+🛑 Early stopping triggered at epoch 55
+sensitivity: 0.9172
+fpr: 0.1232
+accuracy: 0.9012
+recall: 0.9172
+f1: 0.9180
+kappa: 0.7937
+auc: 0.8706
+
+📂 Fold 2/2 (K-Fold)
+🛑 Early stopping triggered at epoch 44
+sensitivity: 0.8874
+fpr: 0.0690
+accuracy: 0.9050
+recall: 0.8874
+f1: 0.9177
+kappa: 0.8056
+auc: 0.8732
+avg_sensitivity: 0.9023
+avg_fpr: 0.0961
+avg_accuracy: 0.9031
+avg_recall: 0.9023
+avg_f1: 0.9178
+avg_kappa: 0.7996
+avg_auc: 0.8719
+
+🔍 正在处理文件: data/features/chb07/features.npz
+
+📂 Fold 1/2 (K-Fold)
+🛑 Early stopping triggered at epoch 114
+sensitivity: 0.9761
+fpr: 0.0112
+accuracy: 0.9811
+recall: 0.9761
+f1: 0.9842
+kappa: 0.9607
+auc: 0.9368
+
+📂 Fold 2/2 (K-Fold)
+🛑 Early stopping triggered at epoch 16
+sensitivity: 0.9218
+fpr: 0.0083
+accuracy: 0.9500
+recall: 0.9218
+f1: 0.9565
+kappa: 0.8979
+auc: 0.9247
+avg_sensitivity: 0.9489
+avg_fpr: 0.0097
+avg_accuracy: 0.9656
+avg_recall: 0.9489
+avg_f1: 0.9704
+avg_kappa: 0.9293
+avg_auc: 0.9307
+
+🔍 正在处理文件: data/features/chb08/features.npz
+
+📂 Fold 1/2 (K-Fold)
+🛑 Early stopping triggered at epoch 19
+sensitivity: 0.9839
+fpr: 0.0226
+accuracy: 0.9813
+recall: 0.9839
+f1: 0.9846
+kappa: 0.9609
+auc: 0.8712
+
+📂 Fold 2/2 (K-Fold)
+🛑 Early stopping triggered at epoch 19
+sensitivity: 0.9772
+fpr: 0.0252
+accuracy: 0.9762
+recall: 0.9772
+f1: 0.9799
+kappa: 0.9508
+auc: 0.8661
+avg_sensitivity: 0.9805
+avg_fpr: 0.0239
+avg_accuracy: 0.9788
+avg_recall: 0.9805
+avg_f1: 0.9823
+avg_kappa: 0.9558
+avg_auc: 0.8687
+
+🔍 正在处理文件: data/features/chb09/features.npz
+
+📂 Fold 1/2 (K-Fold)
+🛑 Early stopping triggered at epoch 49
+sensitivity: 0.9001
+fpr: 0.0343
+accuracy: 0.9261
+recall: 0.9001
+f1: 0.9363
+kappa: 0.8487
+auc: 0.9127
+
+📂 Fold 2/2 (K-Fold)
+🛑 Early stopping triggered at epoch 58
+sensitivity: 0.8780
+fpr: 0.0234
+accuracy: 0.9178
+recall: 0.8780
+f1: 0.9272
+kappa: 0.8334
+auc: 0.9083
+avg_sensitivity: 0.8891
+avg_fpr: 0.0289
+avg_accuracy: 0.9219
+avg_recall: 0.8891
+avg_f1: 0.9318
+avg_kappa: 0.8410
+avg_auc: 0.9105
+
+🔍 正在处理文件: data/features/chb10/features.npz
+
+📂 Fold 1/2 (K-Fold)
+🛑 Early stopping triggered at epoch 119
+sensitivity: 0.8762
+fpr: 0.0248
+accuracy: 0.9155
+recall: 0.8762
+f1: 0.9260
+kappa: 0.8284
+auc: 0.8953
+
+📂 Fold 2/2 (K-Fold)
+🛑 Early stopping triggered at epoch 64
+sensitivity: 0.9066
+fpr: 0.0414
+accuracy: 0.9276
+recall: 0.9066
+f1: 0.9373
+kappa: 0.8518
+auc: 0.8796
+avg_sensitivity: 0.8914
+avg_fpr: 0.0331
+avg_accuracy: 0.9216
+avg_recall: 0.8914
+avg_f1: 0.9316
+avg_kappa: 0.8401
+avg_auc: 0.8875
+
+🔍 正在处理文件: data/features/chb11/features.npz
+
+📂 Fold 1/2 (K-Fold)
+🛑 Early stopping triggered at epoch 24
+sensitivity: 0.9871
+fpr: 0.0072
+accuracy: 0.9893
+recall: 0.9871
+f1: 0.9912
+kappa: 0.9775
+auc: 0.9186
+
+📂 Fold 2/2 (K-Fold)
+🛑 Early stopping triggered at epoch 30
+sensitivity: 0.9693
+fpr: 0.0096
+accuracy: 0.9780
+recall: 0.9693
+f1: 0.9811
+kappa: 0.9548
+auc: 0.9372
+avg_sensitivity: 0.9782
+avg_fpr: 0.0084
+avg_accuracy: 0.9836
+avg_recall: 0.9782
+avg_f1: 0.9861
+avg_kappa: 0.9661
+avg_auc: 0.9279
+
+🔍 正在处理文件: data/features/chb12/features.npz
+
+📂 Fold 1/2 (K-Fold)
+🛑 Early stopping triggered at epoch 154
+sensitivity: 0.9010
+fpr: 0.0275
+accuracy: 0.9295
+recall: 0.9010
+f1: 0.9389
+kappa: 0.8560
+auc: 0.9030
+
+📂 Fold 2/2 (K-Fold)
+🛑 Early stopping triggered at epoch 127
+sensitivity: 0.9227
+fpr: 0.0452
+accuracy: 0.9356
+recall: 0.9227
+f1: 0.9449
+kappa: 0.8674
+auc: 0.8782
+avg_sensitivity: 0.9118
+avg_fpr: 0.0363
+avg_accuracy: 0.9326
+avg_recall: 0.9118
+avg_f1: 0.9419
+avg_kappa: 0.8617
+avg_auc: 0.8906
+
+🔍 正在处理文件: data/features/chb13/features.npz
+
+📂 Fold 1/2 (K-Fold)
+🛑 Early stopping triggered at epoch 68
+sensitivity: 0.9135
+fpr: 0.0183
+accuracy: 0.9405
+recall: 0.9135
+f1: 0.9488
+kappa: 0.8782
+auc: 0.9033
+
+📂 Fold 2/2 (K-Fold)
+🛑 Early stopping triggered at epoch 64
+sensitivity: 0.9373
+fpr: 0.0263
+accuracy: 0.9520
+recall: 0.9373
+f1: 0.9589
+kappa: 0.9013
+auc: 0.9080
+avg_sensitivity: 0.9254
+avg_fpr: 0.0223
+avg_accuracy: 0.9463
+avg_recall: 0.9254
+avg_f1: 0.9538
+avg_kappa: 0.8897
+avg_auc: 0.9056
+
+🔍 正在处理文件: data/features/chb14/features.npz
+
+📂 Fold 1/2 (K-Fold)
+🛑 Early stopping triggered at epoch 22
+sensitivity: 0.8281
+fpr: 0.0987
+accuracy: 0.8575
+recall: 0.8281
+f1: 0.8744
+kappa: 0.7109
+auc: 0.8483
+
+📂 Fold 2/2 (K-Fold)
+🛑 Early stopping triggered at epoch 38
+sensitivity: 0.8178
+fpr: 0.0555
+accuracy: 0.8683
+recall: 0.8178
+f1: 0.8819
+kappa: 0.7352
+auc: 0.8671
+avg_sensitivity: 0.8230
+avg_fpr: 0.0771
+avg_accuracy: 0.8629
+avg_recall: 0.8230
+avg_f1: 0.8781
+avg_kappa: 0.7230
+avg_auc: 0.8577
+
+🔍 正在处理文件: data/features/chb15/features.npz
+
+📂 Fold 1/2 (K-Fold)
+🛑 Early stopping triggered at epoch 19
+sensitivity: 0.8787
+fpr: 0.2906
+accuracy: 0.8116
+recall: 0.8787
+f1: 0.8492
+kappa: 0.5990
+auc: 0.7856
+
+📂 Fold 2/2 (K-Fold)
+🛑 Early stopping triggered at epoch 47
+sensitivity: 0.7651
+fpr: 0.0133
+accuracy: 0.8546
+recall: 0.7651
+f1: 0.8625
+kappa: 0.7134
+auc: 0.8118
+avg_sensitivity: 0.8219
+avg_fpr: 0.1519
+avg_accuracy: 0.8331
+avg_recall: 0.8219
+avg_f1: 0.8559
+avg_kappa: 0.6562
+avg_auc: 0.7987
+
+🔍 正在处理文件: data/features/chb16/features.npz
+
+📂 Fold 1/2 (K-Fold)
+🛑 Early stopping triggered at epoch 75
+sensitivity: 0.9437
+fpr: 0.0922
+accuracy: 0.9295
+recall: 0.9437
+f1: 0.9418
+kappa: 0.8524
+auc: 0.7843
+
+📂 Fold 2/2 (K-Fold)
+🛑 Early stopping triggered at epoch 64
+sensitivity: 0.9470
+fpr: 0.1289
+accuracy: 0.9163
+recall: 0.9470
+f1: 0.9309
+kappa: 0.8249
+auc: 0.7672
+avg_sensitivity: 0.9454
+avg_fpr: 0.1105
+avg_accuracy: 0.9229
+avg_recall: 0.9454
+avg_f1: 0.9364
+avg_kappa: 0.8387
+avg_auc: 0.7757
+
+🔍 正在处理文件: data/features/chb17/features.npz
+
+📂 Fold 1/2 (K-Fold)
+🛑 Early stopping triggered at epoch 26
+sensitivity: 0.9797
+fpr: 0.1027
+accuracy: 0.9470
+recall: 0.9797
+f1: 0.9571
+kappa: 0.8880
+auc: 0.8652
+
+📂 Fold 2/2 (K-Fold)
+🛑 Early stopping triggered at epoch 16
+sensitivity: 0.9665
+fpr: 0.1129
+accuracy: 0.9344
+recall: 0.9665
+f1: 0.9462
+kappa: 0.8624
+auc: 0.8699
+avg_sensitivity: 0.9731
+avg_fpr: 0.1078
+avg_accuracy: 0.9407
+avg_recall: 0.9731
+avg_f1: 0.9517
+avg_kappa: 0.8752
+avg_auc: 0.8675
+
+🔍 正在处理文件: data/features/chb18/features.npz
+
+📂 Fold 1/2 (K-Fold)
+🛑 Early stopping triggered at epoch 60
+sensitivity: 0.8587
+fpr: 0.0096
+accuracy: 0.9099
+recall: 0.8587
+f1: 0.9210
+kappa: 0.8176
+auc: 0.9192
+
+📂 Fold 2/2 (K-Fold)
+🛑 Early stopping triggered at epoch 43
+sensitivity: 0.9072
+fpr: 0.0866
+accuracy: 0.9097
+recall: 0.9072
+f1: 0.9221
+kappa: 0.8149
+auc: 0.8893
+avg_sensitivity: 0.8830
+avg_fpr: 0.0481
+avg_accuracy: 0.9098
+avg_recall: 0.8830
+avg_f1: 0.9215
+avg_kappa: 0.8162
+avg_auc: 0.9042
+
+🔍 正在处理文件: data/features/chb19/features.npz
+
+📂 Fold 1/2 (K-Fold)
+🛑 Early stopping triggered at epoch 64
+sensitivity: 0.9502
+fpr: 0.0009
+accuracy: 0.9696
+recall: 0.9502
+f1: 0.9741
+kappa: 0.9373
+auc: 0.9721
+
+📂 Fold 2/2 (K-Fold)
+🛑 Early stopping triggered at epoch 19
+sensitivity: 0.9038
+fpr: 0.0009
+accuracy: 0.9422
+recall: 0.9038
+f1: 0.9492
+kappa: 0.8825
+auc: 0.9431
+avg_sensitivity: 0.9270
+avg_fpr: 0.0009
+avg_accuracy: 0.9559
+avg_recall: 0.9270
+avg_f1: 0.9617
+avg_kappa: 0.9099
+avg_auc: 0.9576
+
+🔍 正在处理文件: data/features/chb20/features.npz
+
+📂 Fold 1/2 (K-Fold)
+🛑 Early stopping triggered at epoch 64
+sensitivity: 0.9823
+fpr: 0.0040
+accuracy: 0.9878
+recall: 0.9823
+f1: 0.9898
+kappa: 0.9745
+auc: 0.9572
+
+📂 Fold 2/2 (K-Fold)
+🛑 Early stopping triggered at epoch 65
+sensitivity: 0.9855
+fpr: 0.0012
+accuracy: 0.9909
+recall: 0.9855
+f1: 0.9923
+kappa: 0.9812
+auc: 0.9573
+avg_sensitivity: 0.9839
+avg_fpr: 0.0026
+avg_accuracy: 0.9893
+avg_recall: 0.9839
+avg_f1: 0.9910
+avg_kappa: 0.9778
+avg_auc: 0.9573
+
+🔍 正在处理文件: data/features/chb21/features.npz
+
+📂 Fold 1/2 (K-Fold)
+🛑 Early stopping triggered at epoch 33
+sensitivity: 0.9622
+fpr: 0.2379
+accuracy: 0.8827
+recall: 0.9622
+f1: 0.9082
+kappa: 0.7473
+auc: 0.8023
+
+📂 Fold 2/2 (K-Fold)
+🛑 Early stopping triggered at epoch 21
+sensitivity: 0.9674
+fpr: 0.2692
+accuracy: 0.8721
+recall: 0.9674
+f1: 0.9003
+kappa: 0.7243
+auc: 0.7872
+avg_sensitivity: 0.9648
+avg_fpr: 0.2535
+avg_accuracy: 0.8774
+avg_recall: 0.9648
+avg_f1: 0.9043
+avg_kappa: 0.7358
+avg_auc: 0.7947
+
+🔍 正在处理文件: data/features/chb22/features.npz
+
+📂 Fold 1/2 (K-Fold)
+🛑 Early stopping triggered at epoch 20
+sensitivity: 0.9859
+fpr: 0.1800
+accuracy: 0.9218
+recall: 0.9859
+f1: 0.9393
+kappa: 0.8302
+auc: 0.7659
+
+📂 Fold 2/2 (K-Fold)
+🛑 Early stopping triggered at epoch 26
+sensitivity: 0.9902
+fpr: 0.1980
+accuracy: 0.9123
+recall: 0.9902
+f1: 0.9298
+kappa: 0.8143
+auc: 0.7794
+avg_sensitivity: 0.9880
+avg_fpr: 0.1890
+avg_accuracy: 0.9171
+avg_recall: 0.9880
+avg_f1: 0.9346
+avg_kappa: 0.8222
+avg_auc: 0.7726
+
+🔍 正在处理文件: data/features/chb23/features.npz
+
+📂 Fold 1/2 (K-Fold)
+🛑 Early stopping triggered at epoch 95
+sensitivity: 0.9489
+fpr: 0.0478
+accuracy: 0.9502
+recall: 0.9489
+f1: 0.9585
+kappa: 0.8963
+auc: 0.8602
+
+📂 Fold 2/2 (K-Fold)
+🛑 Early stopping triggered at epoch 102
+sensitivity: 0.9531
+fpr: 0.0771
+accuracy: 0.9408
+recall: 0.9531
+f1: 0.9503
+kappa: 0.8772
+auc: 0.8367
+avg_sensitivity: 0.9510
+avg_fpr: 0.0624
+avg_accuracy: 0.9455
+avg_recall: 0.9510
+avg_f1: 0.9544
+avg_kappa: 0.8868
+avg_auc: 0.8485
+📊 所有患者平均指标：
+final_avg_avg_sensitivity: 0.9232
+final_avg_avg_fpr: 0.0633
+final_avg_avg_accuracy: 0.9287
+final_avg_avg_recall: 0.9232
+final_avg_avg_f1: 0.9393
+final_avg_avg_kappa: 0.8526
+final_avg_avg_auc: 0.8787

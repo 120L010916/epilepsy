@@ -1,0 +1,7 @@
+{"time":"2025-06-01T08:48:10.437079329+08:00","level":"INFO","msg":"stream: starting","core version":"0.19.4","symlink path":"/home/xulei/xulei/dataset-distillation/Epilepsy/wandb/run-20250601_084810-mhepgcu6/logs/debug-core.log"}
+{"time":"2025-06-01T08:48:11.550732216+08:00","level":"INFO","msg":"created new stream","id":"mhepgcu6"}
+{"time":"2025-06-01T08:48:11.550765767+08:00","level":"INFO","msg":"stream: started","id":"mhepgcu6"}
+{"time":"2025-06-01T08:48:11.550803578+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"mhepgcu6"}
+{"time":"2025-06-01T08:48:11.55087172+08:00","level":"INFO","msg":"handler: started","stream_id":"mhepgcu6"}
+{"time":"2025-06-01T08:48:11.550877591+08:00","level":"INFO","msg":"sender: started","stream_id":"mhepgcu6"}
+{"time":"2025-06-01T08:48:11.853285393+08:00","level":"INFO","msg":"Starting system monitor"}

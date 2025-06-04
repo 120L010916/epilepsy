@@ -1,0 +1,1251 @@
+nohup: ignoring input
+
+🔍 正在处理文件: data/features/chb01/features.npz
+
+📂 Fold 1/5 (K-Fold)
+sensitivity: 0.9632
+fpr: 0.1176
+accuracy: 0.9321
+recall: 0.9632
+f1: 0.9458
+kappa: 0.8549
+auc: 0.9785
+
+📂 Fold 2/5 (K-Fold)
+sensitivity: 0.9650
+fpr: 0.1279
+accuracy: 0.9269
+recall: 0.9650
+f1: 0.9397
+kappa: 0.8471
+auc: 0.9809
+
+📂 Fold 3/5 (K-Fold)
+sensitivity: 0.9615
+fpr: 0.1014
+accuracy: 0.9368
+recall: 0.9615
+f1: 0.9488
+kappa: 0.8665
+auc: 0.9820
+
+📂 Fold 4/5 (K-Fold)
+sensitivity: 0.9498
+fpr: 0.1162
+accuracy: 0.9229
+recall: 0.9498
+f1: 0.9360
+kappa: 0.8392
+auc: 0.9756
+
+📂 Fold 5/5 (K-Fold)
+sensitivity: 0.9652
+fpr: 0.1026
+accuracy: 0.9376
+recall: 0.9652
+f1: 0.9484
+kappa: 0.8697
+auc: 0.9835
+avg_sensitivity: 0.9609
+avg_fpr: 0.1132
+avg_accuracy: 0.9313
+avg_recall: 0.9609
+avg_f1: 0.9437
+avg_kappa: 0.8555
+avg_auc: 0.9801
+
+🔍 正在处理文件: data/features/chb02/features.npz
+
+📂 Fold 1/5 (K-Fold)
+sensitivity: 0.8678
+fpr: 0.1344
+accuracy: 0.8670
+recall: 0.8678
+f1: 0.8920
+kappa: 0.7192
+auc: 0.9414
+
+📂 Fold 2/5 (K-Fold)
+sensitivity: 0.8580
+fpr: 0.1425
+accuracy: 0.8578
+recall: 0.8580
+f1: 0.8782
+kappa: 0.7076
+auc: 0.9427
+
+📂 Fold 3/5 (K-Fold)
+sensitivity: 0.8779
+fpr: 0.1437
+accuracy: 0.8693
+recall: 0.8779
+f1: 0.8897
+kappa: 0.7293
+auc: 0.9345
+
+📂 Fold 4/5 (K-Fold)
+sensitivity: 0.8463
+fpr: 0.1304
+accuracy: 0.8555
+recall: 0.8463
+f1: 0.8762
+kappa: 0.7032
+auc: 0.9471
+
+📂 Fold 5/5 (K-Fold)
+sensitivity: 0.8699
+fpr: 0.1368
+accuracy: 0.8670
+recall: 0.8699
+f1: 0.8807
+kappa: 0.7305
+auc: 0.9421
+avg_sensitivity: 0.8640
+avg_fpr: 0.1376
+avg_accuracy: 0.8633
+avg_recall: 0.8640
+avg_f1: 0.8834
+avg_kappa: 0.7179
+avg_auc: 0.9416
+
+🔍 正在处理文件: data/features/chb03/features.npz
+
+📂 Fold 1/5 (K-Fold)
+sensitivity: 0.8812
+fpr: 0.0841
+accuracy: 0.8948
+recall: 0.8812
+f1: 0.9106
+kappa: 0.7832
+auc: 0.9606
+
+📂 Fold 2/5 (K-Fold)
+sensitivity: 0.8820
+fpr: 0.0899
+accuracy: 0.8930
+recall: 0.8820
+f1: 0.9093
+kappa: 0.7792
+auc: 0.9633
+
+📂 Fold 3/5 (K-Fold)
+sensitivity: 0.9071
+fpr: 0.0774
+accuracy: 0.9133
+recall: 0.9071
+f1: 0.9260
+kappa: 0.8215
+auc: 0.9705
+
+📂 Fold 4/5 (K-Fold)
+sensitivity: 0.8817
+fpr: 0.0703
+accuracy: 0.9011
+recall: 0.8817
+f1: 0.9139
+kappa: 0.7981
+auc: 0.9628
+
+📂 Fold 5/5 (K-Fold)
+sensitivity: 0.8907
+fpr: 0.1147
+accuracy: 0.8885
+recall: 0.8907
+f1: 0.9042
+kappa: 0.7709
+auc: 0.9594
+avg_sensitivity: 0.8885
+avg_fpr: 0.0873
+avg_accuracy: 0.8981
+avg_recall: 0.8885
+avg_f1: 0.9128
+avg_kappa: 0.7906
+avg_auc: 0.9633
+
+🔍 正在处理文件: data/features/chb04/features.npz
+
+📂 Fold 1/5 (K-Fold)
+sensitivity: 0.8509
+fpr: 0.1411
+accuracy: 0.8541
+recall: 0.8509
+f1: 0.8751
+kappa: 0.6999
+auc: 0.9342
+
+📂 Fold 2/5 (K-Fold)
+sensitivity: 0.8751
+fpr: 0.1603
+accuracy: 0.8610
+recall: 0.8751
+f1: 0.8833
+kappa: 0.7115
+auc: 0.9419
+
+📂 Fold 3/5 (K-Fold)
+sensitivity: 0.8955
+fpr: 0.1782
+accuracy: 0.8659
+recall: 0.8955
+f1: 0.8888
+kappa: 0.7199
+auc: 0.9372
+
+📂 Fold 4/5 (K-Fold)
+sensitivity: 0.8553
+fpr: 0.1637
+accuracy: 0.8478
+recall: 0.8553
+f1: 0.8719
+kappa: 0.6847
+auc: 0.9248
+
+📂 Fold 5/5 (K-Fold)
+sensitivity: 0.8702
+fpr: 0.1644
+accuracy: 0.8562
+recall: 0.8702
+f1: 0.8779
+kappa: 0.7029
+auc: 0.9277
+avg_sensitivity: 0.8694
+avg_fpr: 0.1615
+avg_accuracy: 0.8570
+avg_recall: 0.8694
+avg_f1: 0.8794
+avg_kappa: 0.7038
+avg_auc: 0.9332
+
+🔍 正在处理文件: data/features/chb05/features.npz
+
+📂 Fold 1/5 (K-Fold)
+sensitivity: 0.7928
+fpr: 0.1464
+accuracy: 0.8170
+recall: 0.7928
+f1: 0.8390
+kappa: 0.6288
+auc: 0.9043
+
+📂 Fold 2/5 (K-Fold)
+sensitivity: 0.7529
+fpr: 0.1611
+accuracy: 0.7859
+recall: 0.7529
+f1: 0.8127
+kappa: 0.5665
+auc: 0.8824
+
+📂 Fold 3/5 (K-Fold)
+sensitivity: 0.7938
+fpr: 0.1614
+accuracy: 0.8120
+recall: 0.7938
+f1: 0.8337
+kappa: 0.6188
+auc: 0.8915
+
+📂 Fold 4/5 (K-Fold)
+sensitivity: 0.7768
+fpr: 0.1477
+accuracy: 0.8081
+recall: 0.7768
+f1: 0.8258
+kappa: 0.6141
+auc: 0.8974
+
+📂 Fold 5/5 (K-Fold)
+sensitivity: 0.7934
+fpr: 0.1513
+accuracy: 0.8154
+recall: 0.7934
+f1: 0.8382
+kappa: 0.6248
+auc: 0.8891
+avg_sensitivity: 0.7819
+avg_fpr: 0.1536
+avg_accuracy: 0.8077
+avg_recall: 0.7819
+avg_f1: 0.8299
+avg_kappa: 0.6106
+avg_auc: 0.8929
+
+🔍 正在处理文件: data/features/chb06/features.npz
+
+📂 Fold 1/5 (K-Fold)
+sensitivity: 0.7441
+fpr: 0.1356
+accuracy: 0.7909
+recall: 0.7441
+f1: 0.8130
+kappa: 0.5804
+auc: 0.8905
+
+📂 Fold 2/5 (K-Fold)
+sensitivity: 0.7486
+fpr: 0.1248
+accuracy: 0.8001
+recall: 0.7486
+f1: 0.8162
+kappa: 0.6010
+auc: 0.8902
+
+📂 Fold 3/5 (K-Fold)
+sensitivity: 0.7617
+fpr: 0.1336
+accuracy: 0.8026
+recall: 0.7617
+f1: 0.8246
+kappa: 0.6024
+auc: 0.8920
+
+📂 Fold 4/5 (K-Fold)
+sensitivity: 0.7673
+fpr: 0.1397
+accuracy: 0.8049
+recall: 0.7673
+f1: 0.8242
+kappa: 0.6076
+auc: 0.8926
+
+📂 Fold 5/5 (K-Fold)
+sensitivity: 0.7623
+fpr: 0.1405
+accuracy: 0.8021
+recall: 0.7623
+f1: 0.8198
+kappa: 0.6030
+auc: 0.8924
+avg_sensitivity: 0.7568
+avg_fpr: 0.1348
+avg_accuracy: 0.8001
+avg_recall: 0.7568
+avg_f1: 0.8196
+avg_kappa: 0.5989
+avg_auc: 0.8916
+
+🔍 正在处理文件: data/features/chb07/features.npz
+
+📂 Fold 1/5 (K-Fold)
+sensitivity: 0.9349
+fpr: 0.1766
+accuracy: 0.8917
+recall: 0.9349
+f1: 0.9135
+kappa: 0.7687
+auc: 0.9386
+
+📂 Fold 2/5 (K-Fold)
+sensitivity: 0.9346
+fpr: 0.1584
+accuracy: 0.8981
+recall: 0.9346
+f1: 0.9178
+kappa: 0.7841
+auc: 0.9527
+
+📂 Fold 3/5 (K-Fold)
+sensitivity: 0.9553
+fpr: 0.1457
+accuracy: 0.9130
+recall: 0.9553
+f1: 0.9272
+kappa: 0.8192
+auc: 0.9579
+
+📂 Fold 4/5 (K-Fold)
+sensitivity: 0.9635
+fpr: 0.1631
+accuracy: 0.9139
+recall: 0.9635
+f1: 0.9316
+kappa: 0.8158
+auc: 0.9569
+
+📂 Fold 5/5 (K-Fold)
+sensitivity: 0.9498
+fpr: 0.1290
+accuracy: 0.9176
+recall: 0.9498
+f1: 0.9316
+kappa: 0.8281
+auc: 0.9587
+avg_sensitivity: 0.9476
+avg_fpr: 0.1546
+avg_accuracy: 0.9069
+avg_recall: 0.9476
+avg_f1: 0.9243
+avg_kappa: 0.8032
+avg_auc: 0.9530
+
+🔍 正在处理文件: data/features/chb08/features.npz
+
+📂 Fold 1/5 (K-Fold)
+sensitivity: 0.9802
+fpr: 0.2740
+accuracy: 0.8756
+recall: 0.9802
+f1: 0.9026
+kappa: 0.7333
+auc: 0.9180
+
+📂 Fold 2/5 (K-Fold)
+sensitivity: 0.9789
+fpr: 0.2526
+accuracy: 0.8939
+recall: 0.9789
+f1: 0.9211
+kappa: 0.7608
+auc: 0.9250
+
+📂 Fold 3/5 (K-Fold)
+sensitivity: 0.9756
+fpr: 0.2456
+accuracy: 0.8856
+recall: 0.9756
+f1: 0.9100
+kappa: 0.7549
+auc: 0.9204
+
+📂 Fold 4/5 (K-Fold)
+sensitivity: 0.9771
+fpr: 0.3160
+accuracy: 0.8550
+recall: 0.9771
+f1: 0.8872
+kappa: 0.6891
+auc: 0.9098
+
+📂 Fold 5/5 (K-Fold)
+sensitivity: 0.9779
+fpr: 0.2573
+accuracy: 0.8844
+recall: 0.9779
+f1: 0.9107
+kappa: 0.7491
+auc: 0.9308
+avg_sensitivity: 0.9780
+avg_fpr: 0.2691
+avg_accuracy: 0.8789
+avg_recall: 0.9780
+avg_f1: 0.9063
+avg_kappa: 0.7374
+avg_auc: 0.9208
+
+🔍 正在处理文件: data/features/chb09/features.npz
+
+📂 Fold 1/5 (K-Fold)
+sensitivity: 0.8588
+fpr: 0.1615
+accuracy: 0.8507
+recall: 0.8588
+f1: 0.8735
+kappa: 0.6915
+auc: 0.9339
+
+📂 Fold 2/5 (K-Fold)
+sensitivity: 0.8678
+fpr: 0.1333
+accuracy: 0.8674
+recall: 0.8678
+f1: 0.8877
+kappa: 0.7259
+auc: 0.9461
+
+📂 Fold 3/5 (K-Fold)
+sensitivity: 0.8789
+fpr: 0.1360
+accuracy: 0.8729
+recall: 0.8789
+f1: 0.8919
+kappa: 0.7378
+auc: 0.9460
+
+📂 Fold 4/5 (K-Fold)
+sensitivity: 0.8417
+fpr: 0.1268
+accuracy: 0.8542
+recall: 0.8417
+f1: 0.8749
+kappa: 0.7008
+auc: 0.9409
+
+📂 Fold 5/5 (K-Fold)
+sensitivity: 0.8667
+fpr: 0.1453
+accuracy: 0.8618
+recall: 0.8667
+f1: 0.8816
+kappa: 0.7158
+auc: 0.9465
+avg_sensitivity: 0.8628
+avg_fpr: 0.1406
+avg_accuracy: 0.8614
+avg_recall: 0.8628
+avg_f1: 0.8819
+avg_kappa: 0.7144
+avg_auc: 0.9427
+
+🔍 正在处理文件: data/features/chb10/features.npz
+
+📂 Fold 1/5 (K-Fold)
+sensitivity: 0.8635
+fpr: 0.1549
+accuracy: 0.8563
+recall: 0.8635
+f1: 0.8796
+kappa: 0.7016
+auc: 0.9367
+
+📂 Fold 2/5 (K-Fold)
+sensitivity: 0.8732
+fpr: 0.1539
+accuracy: 0.8622
+recall: 0.8732
+f1: 0.8830
+kappa: 0.7156
+auc: 0.9366
+
+📂 Fold 3/5 (K-Fold)
+sensitivity: 0.8758
+fpr: 0.1621
+accuracy: 0.8611
+recall: 0.8758
+f1: 0.8850
+kappa: 0.7095
+auc: 0.9402
+
+📂 Fold 4/5 (K-Fold)
+sensitivity: 0.8714
+fpr: 0.1423
+accuracy: 0.8658
+recall: 0.8714
+f1: 0.8850
+kappa: 0.7240
+auc: 0.9440
+
+📂 Fold 5/5 (K-Fold)
+sensitivity: 0.8670
+fpr: 0.1838
+accuracy: 0.8464
+recall: 0.8670
+f1: 0.8702
+kappa: 0.6820
+auc: 0.9316
+avg_sensitivity: 0.8702
+avg_fpr: 0.1594
+avg_accuracy: 0.8584
+avg_recall: 0.8702
+avg_f1: 0.8806
+avg_kappa: 0.7066
+avg_auc: 0.9378
+
+🔍 正在处理文件: data/features/chb11/features.npz
+
+📂 Fold 1/5 (K-Fold)
+sensitivity: 0.9752
+fpr: 0.1208
+accuracy: 0.9394
+recall: 0.9752
+f1: 0.9527
+kappa: 0.8683
+auc: 0.9715
+
+📂 Fold 2/5 (K-Fold)
+sensitivity: 0.9600
+fpr: 0.1444
+accuracy: 0.9182
+recall: 0.9600
+f1: 0.9336
+kappa: 0.8272
+auc: 0.9780
+
+📂 Fold 3/5 (K-Fold)
+sensitivity: 0.9810
+fpr: 0.0906
+accuracy: 0.9520
+recall: 0.9810
+f1: 0.9606
+kappa: 0.8995
+auc: 0.9855
+
+📂 Fold 4/5 (K-Fold)
+sensitivity: 0.9601
+fpr: 0.1131
+accuracy: 0.9309
+recall: 0.9601
+f1: 0.9435
+kappa: 0.8546
+auc: 0.9744
+
+📂 Fold 5/5 (K-Fold)
+sensitivity: 0.9488
+fpr: 0.1171
+accuracy: 0.9210
+recall: 0.9488
+f1: 0.9329
+kappa: 0.8370
+auc: 0.9710
+avg_sensitivity: 0.9650
+avg_fpr: 0.1172
+avg_accuracy: 0.9323
+avg_recall: 0.9650
+avg_f1: 0.9446
+avg_kappa: 0.8573
+avg_auc: 0.9761
+
+🔍 正在处理文件: data/features/chb12/features.npz
+
+📂 Fold 1/5 (K-Fold)
+sensitivity: 0.8163
+fpr: 0.1622
+accuracy: 0.8249
+recall: 0.8163
+f1: 0.8483
+kappa: 0.6420
+auc: 0.9129
+
+📂 Fold 2/5 (K-Fold)
+sensitivity: 0.8218
+fpr: 0.1396
+accuracy: 0.8372
+recall: 0.8218
+f1: 0.8584
+kappa: 0.6680
+auc: 0.9216
+
+📂 Fold 3/5 (K-Fold)
+sensitivity: 0.8018
+fpr: 0.1366
+accuracy: 0.8265
+recall: 0.8018
+f1: 0.8470
+kappa: 0.6482
+auc: 0.9169
+
+📂 Fold 4/5 (K-Fold)
+sensitivity: 0.8133
+fpr: 0.1513
+accuracy: 0.8272
+recall: 0.8133
+f1: 0.8512
+kappa: 0.6461
+auc: 0.9138
+
+📂 Fold 5/5 (K-Fold)
+sensitivity: 0.8146
+fpr: 0.1520
+accuracy: 0.8282
+recall: 0.8146
+f1: 0.8491
+kappa: 0.6505
+auc: 0.9126
+avg_sensitivity: 0.8136
+avg_fpr: 0.1483
+avg_accuracy: 0.8288
+avg_recall: 0.8136
+avg_f1: 0.8508
+avg_kappa: 0.6509
+avg_auc: 0.9156
+
+🔍 正在处理文件: data/features/chb13/features.npz
+
+📂 Fold 1/5 (K-Fold)
+sensitivity: 0.8527
+fpr: 0.1123
+accuracy: 0.8671
+recall: 0.8527
+f1: 0.8833
+kappa: 0.7293
+auc: 0.9548
+
+📂 Fold 2/5 (K-Fold)
+sensitivity: 0.8754
+fpr: 0.1083
+accuracy: 0.8817
+recall: 0.8754
+f1: 0.9003
+kappa: 0.7552
+auc: 0.9554
+
+📂 Fold 3/5 (K-Fold)
+sensitivity: 0.8839
+fpr: 0.1155
+accuracy: 0.8842
+recall: 0.8839
+f1: 0.9030
+kappa: 0.7594
+auc: 0.9586
+
+📂 Fold 4/5 (K-Fold)
+sensitivity: 0.8671
+fpr: 0.0967
+accuracy: 0.8817
+recall: 0.8671
+f1: 0.8973
+kappa: 0.7583
+auc: 0.9601
+
+📂 Fold 5/5 (K-Fold)
+sensitivity: 0.8695
+fpr: 0.1176
+accuracy: 0.8747
+recall: 0.8695
+f1: 0.8918
+kappa: 0.7433
+auc: 0.9539
+avg_sensitivity: 0.8697
+avg_fpr: 0.1101
+avg_accuracy: 0.8779
+avg_recall: 0.8697
+avg_f1: 0.8951
+avg_kappa: 0.7491
+avg_auc: 0.9566
+
+🔍 正在处理文件: data/features/chb14/features.npz
+
+📂 Fold 1/5 (K-Fold)
+sensitivity: 0.7087
+fpr: 0.0810
+accuracy: 0.7925
+recall: 0.7087
+f1: 0.8043
+kappa: 0.5919
+auc: 0.8807
+
+📂 Fold 2/5 (K-Fold)
+sensitivity: 0.7044
+fpr: 0.0892
+accuracy: 0.7892
+recall: 0.7044
+f1: 0.7975
+kappa: 0.5856
+auc: 0.8744
+
+📂 Fold 3/5 (K-Fold)
+sensitivity: 0.7165
+fpr: 0.0991
+accuracy: 0.7874
+recall: 0.7165
+f1: 0.8058
+kappa: 0.5788
+auc: 0.8740
+
+📂 Fold 4/5 (K-Fold)
+sensitivity: 0.7151
+fpr: 0.0730
+accuracy: 0.8002
+recall: 0.7151
+f1: 0.8107
+kappa: 0.6071
+auc: 0.8814
+
+📂 Fold 5/5 (K-Fold)
+sensitivity: 0.7385
+fpr: 0.1079
+accuracy: 0.8006
+recall: 0.7385
+f1: 0.8152
+kappa: 0.6037
+auc: 0.8854
+avg_sensitivity: 0.7166
+avg_fpr: 0.0900
+avg_accuracy: 0.7940
+avg_recall: 0.7166
+avg_f1: 0.8067
+avg_kappa: 0.5934
+avg_auc: 0.8792
+
+🔍 正在处理文件: data/features/chb15/features.npz
+
+📂 Fold 1/5 (K-Fold)
+sensitivity: 0.7043
+fpr: 0.0551
+accuracy: 0.7995
+recall: 0.7043
+f1: 0.8093
+kappa: 0.6077
+auc: 0.8901
+
+📂 Fold 2/5 (K-Fold)
+sensitivity: 0.7183
+fpr: 0.0662
+accuracy: 0.8038
+recall: 0.7183
+f1: 0.8154
+kappa: 0.6141
+auc: 0.8878
+
+📂 Fold 3/5 (K-Fold)
+sensitivity: 0.7002
+fpr: 0.0600
+accuracy: 0.7958
+recall: 0.7002
+f1: 0.8048
+kappa: 0.6006
+auc: 0.8825
+
+📂 Fold 4/5 (K-Fold)
+sensitivity: 0.7090
+fpr: 0.0692
+accuracy: 0.7970
+recall: 0.7090
+f1: 0.8082
+kappa: 0.6014
+auc: 0.8810
+
+📂 Fold 5/5 (K-Fold)
+sensitivity: 0.6985
+fpr: 0.0605
+accuracy: 0.7978
+recall: 0.6985
+f1: 0.8025
+kappa: 0.6045
+auc: 0.8832
+avg_sensitivity: 0.7061
+avg_fpr: 0.0622
+avg_accuracy: 0.7988
+avg_recall: 0.7061
+avg_f1: 0.8081
+avg_kappa: 0.6056
+avg_auc: 0.8849
+
+🔍 正在处理文件: data/features/chb16/features.npz
+
+📂 Fold 1/5 (K-Fold)
+sensitivity: 0.9192
+fpr: 0.3501
+accuracy: 0.8122
+recall: 0.9192
+f1: 0.8551
+kappa: 0.5920
+auc: 0.8573
+
+📂 Fold 2/5 (K-Fold)
+sensitivity: 0.9174
+fpr: 0.3449
+accuracy: 0.8118
+recall: 0.9174
+f1: 0.8536
+kappa: 0.5940
+auc: 0.8517
+
+📂 Fold 3/5 (K-Fold)
+sensitivity: 0.9285
+fpr: 0.3644
+accuracy: 0.8150
+recall: 0.9285
+f1: 0.8601
+kappa: 0.5914
+auc: 0.8632
+
+📂 Fold 4/5 (K-Fold)
+sensitivity: 0.9170
+fpr: 0.3443
+accuracy: 0.8111
+recall: 0.9170
+f1: 0.8525
+kappa: 0.5937
+auc: 0.8550
+
+📂 Fold 5/5 (K-Fold)
+sensitivity: 0.9154
+fpr: 0.3402
+accuracy: 0.8111
+recall: 0.9154
+f1: 0.8516
+kappa: 0.5953
+auc: 0.8642
+avg_sensitivity: 0.9195
+avg_fpr: 0.3488
+avg_accuracy: 0.8123
+avg_recall: 0.9195
+avg_f1: 0.8546
+avg_kappa: 0.5933
+avg_auc: 0.8583
+
+🔍 正在处理文件: data/features/chb17/features.npz
+
+📂 Fold 1/5 (K-Fold)
+sensitivity: 0.9213
+fpr: 0.2315
+accuracy: 0.8620
+recall: 0.9213
+f1: 0.8910
+kappa: 0.7037
+auc: 0.9332
+
+📂 Fold 2/5 (K-Fold)
+sensitivity: 0.9269
+fpr: 0.2435
+accuracy: 0.8602
+recall: 0.9269
+f1: 0.8897
+kappa: 0.6996
+auc: 0.9335
+
+📂 Fold 3/5 (K-Fold)
+sensitivity: 0.9330
+fpr: 0.2428
+accuracy: 0.8593
+recall: 0.9330
+f1: 0.8850
+kappa: 0.7049
+auc: 0.9355
+
+📂 Fold 4/5 (K-Fold)
+sensitivity: 0.9163
+fpr: 0.2104
+accuracy: 0.8667
+recall: 0.9163
+f1: 0.8932
+kappa: 0.7161
+auc: 0.9313
+
+📂 Fold 5/5 (K-Fold)
+sensitivity: 0.9263
+fpr: 0.2127
+accuracy: 0.8694
+recall: 0.9263
+f1: 0.8934
+kappa: 0.7255
+auc: 0.9478
+avg_sensitivity: 0.9248
+avg_fpr: 0.2282
+avg_accuracy: 0.8635
+avg_recall: 0.9248
+avg_f1: 0.8905
+avg_kappa: 0.7100
+avg_auc: 0.9363
+
+🔍 正在处理文件: data/features/chb18/features.npz
+
+📂 Fold 1/5 (K-Fold)
+sensitivity: 0.8490
+fpr: 0.0778
+accuracy: 0.8763
+recall: 0.8490
+f1: 0.8960
+kappa: 0.7446
+auc: 0.9542
+
+📂 Fold 2/5 (K-Fold)
+sensitivity: 0.8205
+fpr: 0.0630
+accuracy: 0.8665
+recall: 0.8205
+f1: 0.8815
+kappa: 0.7304
+auc: 0.9515
+
+📂 Fold 3/5 (K-Fold)
+sensitivity: 0.8185
+fpr: 0.0778
+accuracy: 0.8613
+recall: 0.8185
+f1: 0.8739
+kappa: 0.7213
+auc: 0.9425
+
+📂 Fold 4/5 (K-Fold)
+sensitivity: 0.8368
+fpr: 0.0783
+accuracy: 0.8727
+recall: 0.8368
+f1: 0.8835
+kappa: 0.7441
+auc: 0.9512
+
+📂 Fold 5/5 (K-Fold)
+sensitivity: 0.8342
+fpr: 0.0586
+accuracy: 0.8768
+recall: 0.8342
+f1: 0.8908
+kappa: 0.7510
+auc: 0.9552
+avg_sensitivity: 0.8318
+avg_fpr: 0.0711
+avg_accuracy: 0.8707
+avg_recall: 0.8318
+avg_f1: 0.8852
+avg_kappa: 0.7383
+avg_auc: 0.9509
+
+🔍 正在处理文件: data/features/chb19/features.npz
+
+📂 Fold 1/5 (K-Fold)
+sensitivity: 0.9576
+fpr: 0.0455
+accuracy: 0.9564
+recall: 0.9576
+f1: 0.9642
+kappa: 0.9086
+auc: 0.9907
+
+📂 Fold 2/5 (K-Fold)
+sensitivity: 0.9466
+fpr: 0.0472
+accuracy: 0.9490
+recall: 0.9466
+f1: 0.9575
+kappa: 0.8938
+auc: 0.9849
+
+📂 Fold 3/5 (K-Fold)
+sensitivity: 0.9761
+fpr: 0.0532
+accuracy: 0.9639
+recall: 0.9761
+f1: 0.9692
+kappa: 0.9255
+auc: 0.9905
+
+📂 Fold 4/5 (K-Fold)
+sensitivity: 0.9679
+fpr: 0.0541
+accuracy: 0.9592
+recall: 0.9679
+f1: 0.9664
+kappa: 0.9145
+auc: 0.9889
+
+📂 Fold 5/5 (K-Fold)
+sensitivity: 0.9640
+fpr: 0.0477
+accuracy: 0.9592
+recall: 0.9640
+f1: 0.9655
+kappa: 0.9156
+auc: 0.9938
+avg_sensitivity: 0.9624
+avg_fpr: 0.0495
+avg_accuracy: 0.9576
+avg_recall: 0.9624
+avg_f1: 0.9646
+avg_kappa: 0.9116
+avg_auc: 0.9898
+
+🔍 正在处理文件: data/features/chb20/features.npz
+
+📂 Fold 1/5 (K-Fold)
+sensitivity: 0.9568
+fpr: 0.1025
+accuracy: 0.9336
+recall: 0.9568
+f1: 0.9462
+kappa: 0.8597
+auc: 0.9779
+
+📂 Fold 2/5 (K-Fold)
+sensitivity: 0.9561
+fpr: 0.0871
+accuracy: 0.9388
+recall: 0.9561
+f1: 0.9492
+kappa: 0.8721
+auc: 0.9826
+
+📂 Fold 3/5 (K-Fold)
+sensitivity: 0.9619
+fpr: 0.1051
+accuracy: 0.9356
+recall: 0.9619
+f1: 0.9478
+kappa: 0.8638
+auc: 0.9784
+
+📂 Fold 4/5 (K-Fold)
+sensitivity: 0.9587
+fpr: 0.0890
+accuracy: 0.9391
+recall: 0.9587
+f1: 0.9489
+kappa: 0.8737
+auc: 0.9761
+
+📂 Fold 5/5 (K-Fold)
+sensitivity: 0.9637
+fpr: 0.1026
+accuracy: 0.9368
+recall: 0.9637
+f1: 0.9477
+kappa: 0.8679
+auc: 0.9781
+avg_sensitivity: 0.9594
+avg_fpr: 0.0973
+avg_accuracy: 0.9368
+avg_recall: 0.9594
+avg_f1: 0.9480
+avg_kappa: 0.8674
+avg_auc: 0.9786
+
+🔍 正在处理文件: data/features/chb21/features.npz
+
+📂 Fold 1/5 (K-Fold)
+sensitivity: 0.8647
+fpr: 0.3258
+accuracy: 0.7887
+recall: 0.8647
+f1: 0.8311
+kappa: 0.5502
+auc: 0.8467
+
+📂 Fold 2/5 (K-Fold)
+sensitivity: 0.8358
+fpr: 0.3589
+accuracy: 0.7582
+recall: 0.8358
+f1: 0.8060
+kappa: 0.4861
+auc: 0.8155
+
+📂 Fold 3/5 (K-Fold)
+sensitivity: 0.8676
+fpr: 0.3478
+accuracy: 0.7811
+recall: 0.8676
+f1: 0.8259
+kappa: 0.5330
+auc: 0.8468
+
+📂 Fold 4/5 (K-Fold)
+sensitivity: 0.8737
+fpr: 0.3680
+accuracy: 0.7783
+recall: 0.8737
+f1: 0.8267
+kappa: 0.5216
+auc: 0.8346
+
+📂 Fold 5/5 (K-Fold)
+sensitivity: 0.8784
+fpr: 0.3390
+accuracy: 0.7901
+recall: 0.8784
+f1: 0.8326
+kappa: 0.5534
+auc: 0.8532
+avg_sensitivity: 0.8640
+avg_fpr: 0.3479
+avg_accuracy: 0.7793
+avg_recall: 0.8640
+avg_f1: 0.8245
+avg_kappa: 0.5289
+avg_auc: 0.8394
+
+🔍 正在处理文件: data/features/chb22/features.npz
+
+📂 Fold 1/5 (K-Fold)
+sensitivity: 0.9151
+fpr: 0.4151
+accuracy: 0.7891
+recall: 0.9151
+f1: 0.8429
+kappa: 0.5281
+auc: 0.8398
+
+📂 Fold 2/5 (K-Fold)
+sensitivity: 0.9376
+fpr: 0.3456
+accuracy: 0.8272
+recall: 0.9376
+f1: 0.8688
+kappa: 0.6197
+auc: 0.8847
+
+📂 Fold 3/5 (K-Fold)
+sensitivity: 0.9248
+fpr: 0.3437
+accuracy: 0.8179
+recall: 0.9248
+f1: 0.8594
+kappa: 0.6046
+auc: 0.8602
+
+📂 Fold 4/5 (K-Fold)
+sensitivity: 0.9209
+fpr: 0.3945
+accuracy: 0.7901
+recall: 0.9209
+f1: 0.8371
+kappa: 0.5490
+auc: 0.8614
+
+📂 Fold 5/5 (K-Fold)
+sensitivity: 0.9384
+fpr: 0.3886
+accuracy: 0.8025
+recall: 0.9384
+f1: 0.8474
+kappa: 0.5748
+auc: 0.8809
+avg_sensitivity: 0.9274
+avg_fpr: 0.3775
+avg_accuracy: 0.8053
+avg_recall: 0.9274
+avg_f1: 0.8511
+avg_kappa: 0.5753
+avg_auc: 0.8654
+
+🔍 正在处理文件: data/features/chb23/features.npz
+
+📂 Fold 1/5 (K-Fold)
+sensitivity: 0.9183
+fpr: 0.2677
+accuracy: 0.8452
+recall: 0.9183
+f1: 0.8781
+kappa: 0.6673
+auc: 0.8997
+
+📂 Fold 2/5 (K-Fold)
+sensitivity: 0.9085
+fpr: 0.2590
+accuracy: 0.8427
+recall: 0.9085
+f1: 0.8752
+kappa: 0.6632
+auc: 0.9025
+
+📂 Fold 3/5 (K-Fold)
+sensitivity: 0.9240
+fpr: 0.2804
+accuracy: 0.8414
+recall: 0.9240
+f1: 0.8741
+kappa: 0.6615
+auc: 0.9079
+
+📂 Fold 4/5 (K-Fold)
+sensitivity: 0.9143
+fpr: 0.3145
+accuracy: 0.8226
+recall: 0.9143
+f1: 0.8606
+kappa: 0.6189
+auc: 0.8852
+
+📂 Fold 5/5 (K-Fold)
+sensitivity: 0.9139
+fpr: 0.3009
+accuracy: 0.8260
+recall: 0.9139
+f1: 0.8612
+kappa: 0.6301
+auc: 0.8896
+avg_sensitivity: 0.9158
+avg_fpr: 0.2845
+avg_accuracy: 0.8356
+avg_recall: 0.9158
+avg_f1: 0.8698
+avg_kappa: 0.6482
+avg_auc: 0.8970
+📊 所有患者平均指标：
+final_avg_avg_sensitivity: 0.8764
+final_avg_avg_fpr: 0.1671
+final_avg_avg_accuracy: 0.8589
+final_avg_avg_recall: 0.8764
+final_avg_avg_f1: 0.8807
+final_avg_avg_kappa: 0.7073
+final_avg_avg_auc: 0.9254

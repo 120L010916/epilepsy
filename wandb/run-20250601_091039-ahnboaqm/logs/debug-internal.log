@@ -1,0 +1,16 @@
+{"time":"2025-06-01T09:10:39.609393475+08:00","level":"INFO","msg":"stream: starting","core version":"0.19.4","symlink path":"/home/xulei/xulei/dataset-distillation/Epilepsy/wandb/run-20250601_091039-ahnboaqm/logs/debug-core.log"}
+{"time":"2025-06-01T09:10:39.715684741+08:00","level":"INFO","msg":"created new stream","id":"ahnboaqm"}
+{"time":"2025-06-01T09:10:39.715727703+08:00","level":"INFO","msg":"stream: started","id":"ahnboaqm"}
+{"time":"2025-06-01T09:10:39.715756933+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"ahnboaqm"}
+{"time":"2025-06-01T09:10:39.715853016+08:00","level":"INFO","msg":"sender: started","stream_id":"ahnboaqm"}
+{"time":"2025-06-01T09:10:39.715905007+08:00","level":"INFO","msg":"handler: started","stream_id":"ahnboaqm"}
+{"time":"2025-06-01T09:10:40.055866525+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-01T09:21:27.873521107+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-01T09:21:27.874080002+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-01T09:21:28.873991726+08:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading wandb-summary.json","runtime_seconds":0.320212483,"progress":"1.0MB/2.8MB"},{"desc":"uploading config.yaml","runtime_seconds":0.015028665,"progress":"712B/712B"}],"total_operations":2}}
+{"time":"2025-06-01T09:21:31.149171574+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-01T09:21:34.336890415+08:00","level":"INFO","msg":"stream: closing","id":"ahnboaqm"}
+{"time":"2025-06-01T09:21:34.336928666+08:00","level":"INFO","msg":"handler: closed","stream_id":"ahnboaqm"}
+{"time":"2025-06-01T09:21:34.336945926+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"ahnboaqm"}
+{"time":"2025-06-01T09:21:34.337038309+08:00","level":"INFO","msg":"sender: closed","stream_id":"ahnboaqm"}
+{"time":"2025-06-01T09:21:34.337059019+08:00","level":"INFO","msg":"stream: closed","id":"ahnboaqm"}

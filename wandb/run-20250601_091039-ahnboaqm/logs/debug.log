@@ -1,0 +1,144 @@
+2025-06-01 09:10:39,395 INFO    MainThread:1995625 [wandb_setup.py:_flush():68] Current SDK version is 0.19.4
+2025-06-01 09:10:39,395 INFO    MainThread:1995625 [wandb_setup.py:_flush():68] Configure stats pid to 1995625
+2025-06-01 09:10:39,395 INFO    MainThread:1995625 [wandb_setup.py:_flush():68] Loading settings from /home/xulei/.config/wandb/settings
+2025-06-01 09:10:39,395 INFO    MainThread:1995625 [wandb_setup.py:_flush():68] Loading settings from /home/xulei/xulei/dataset-distillation/Epilepsy/wandb/settings
+2025-06-01 09:10:39,395 INFO    MainThread:1995625 [wandb_setup.py:_flush():68] Loading settings from environment variables
+2025-06-01 09:10:39,396 INFO    MainThread:1995625 [wandb_init.py:setup_run_log_directory():624] Logging user logs to /home/xulei/xulei/dataset-distillation/Epilepsy/wandb/run-20250601_091039-ahnboaqm/logs/debug.log
+2025-06-01 09:10:39,396 INFO    MainThread:1995625 [wandb_init.py:setup_run_log_directory():625] Logging internal logs to /home/xulei/xulei/dataset-distillation/Epilepsy/wandb/run-20250601_091039-ahnboaqm/logs/debug-internal.log
+2025-06-01 09:10:39,396 INFO    MainThread:1995625 [wandb_init.py:init():743] calling init triggers
+2025-06-01 09:10:39,396 INFO    MainThread:1995625 [wandb_init.py:init():748] wandb.init called with sweep_config: {}
+config: {'input_dir': 'data/features/', 'epochs': 30, 'batch_size': 256, 'lr': 0.001, 'k_folds': 5}
+2025-06-01 09:10:39,396 INFO    MainThread:1995625 [wandb_init.py:init():776] starting backend
+2025-06-01 09:10:39,601 INFO    MainThread:1995625 [wandb_init.py:init():780] sending inform_init request
+2025-06-01 09:10:39,605 INFO    MainThread:1995625 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-06-01 09:10:39,606 INFO    MainThread:1995625 [wandb_init.py:init():795] backend started and connected
+2025-06-01 09:10:39,617 INFO    MainThread:1995625 [wandb_init.py:init():888] updated telemetry
+2025-06-01 09:10:39,622 INFO    MainThread:1995625 [wandb_init.py:init():915] communicating run to backend with 90.0 second timeout
+2025-06-01 09:10:40,053 INFO    MainThread:1995625 [wandb_init.py:init():967] starting run threads in backend
+2025-06-01 09:10:40,237 INFO    MainThread:1995625 [wandb_run.py:_console_start():2409] atexit reg
+2025-06-01 09:10:40,237 INFO    MainThread:1995625 [wandb_run.py:_redirect():2259] redirect: wrap_raw
+2025-06-01 09:10:40,238 INFO    MainThread:1995625 [wandb_run.py:_redirect():2324] Wrapping output streams.
+2025-06-01 09:10:40,238 INFO    MainThread:1995625 [wandb_run.py:_redirect():2349] Redirects installed.
+2025-06-01 09:10:40,241 INFO    MainThread:1995625 [wandb_init.py:init():1009] run started, returning control to user process
+2025-06-01 09:10:41,347 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:10:48,260 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:10:54,847 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:11:01,255 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:11:07,471 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:11:13,911 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:11:16,361 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:11:18,554 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:11:20,689 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:11:22,835 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:11:25,193 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:11:30,668 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:11:36,241 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:11:41,790 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:11:47,359 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:11:52,833 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:11:56,596 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:12:00,186 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:12:04,143 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:12:07,714 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:12:11,636 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:12:16,299 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:12:21,420 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:12:28,129 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:12:33,997 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:12:39,736 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:12:54,068 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:13:06,626 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:13:18,572 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:13:30,502 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:13:44,538 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:13:48,960 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:13:52,493 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:13:55,214 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:13:58,205 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:14:00,885 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:14:05,482 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:14:09,999 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:14:14,705 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:14:19,160 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:14:23,814 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:14:27,395 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:14:31,378 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:14:35,376 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:14:39,367 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:14:43,049 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:14:49,547 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:14:55,960 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:15:02,439 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:15:08,677 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:15:15,098 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:15:16,954 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:15:18,934 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:15:20,788 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:15:22,602 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:15:24,489 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:15:36,678 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:15:49,201 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:16:01,235 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:16:13,543 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:16:25,642 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:16:32,859 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:16:40,115 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:16:47,665 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:16:55,026 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:17:02,367 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:17:09,477 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:17:16,434 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:17:23,351 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:17:30,219 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:17:37,556 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:17:50,926 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:18:04,539 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:18:18,063 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:18:32,155 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:18:46,016 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:18:52,792 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:18:59,853 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:19:06,830 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:19:13,777 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:19:21,170 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:19:23,719 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:19:26,544 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:19:29,234 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:19:32,077 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:19:34,654 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:19:38,994 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:19:43,328 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:19:47,563 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:19:51,768 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:19:56,043 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:19:58,329 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:20:00,851 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:20:03,215 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:20:05,467 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:20:07,890 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:20:13,462 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:20:18,805 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:20:24,278 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:20:30,070 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:20:35,833 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:20:38,982 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:20:42,283 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:20:45,742 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:20:48,914 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:20:52,002 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:20:54,281 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:20:56,378 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:20:58,488 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:21:00,592 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:21:02,799 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:21:07,867 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:21:12,748 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:21:17,747 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:21:22,789 INFO    MainThread:1995625 [wandb_watch.py:_watch():71] Watching
+2025-06-01 09:21:27,872 INFO    MainThread:1995625 [wandb_run.py:_finish():2134] finishing run tihuahu-nus/seizure-prediction/ahnboaqm
+2025-06-01 09:21:27,872 INFO    MainThread:1995625 [wandb_run.py:_atexit_cleanup():2374] got exitcode: 0
+2025-06-01 09:21:27,872 INFO    MainThread:1995625 [wandb_run.py:_restore():2356] restore
+2025-06-01 09:21:27,873 INFO    MainThread:1995625 [wandb_run.py:_restore():2362] restore done
+2025-06-01 09:21:34,327 INFO    MainThread:1995625 [wandb_run.py:_footer_history_summary_info():3976] rendering history
+2025-06-01 09:21:34,335 INFO    MainThread:1995625 [wandb_run.py:_footer_history_summary_info():4008] rendering summary
+2025-06-01 09:21:34,336 INFO    MainThread:1995625 [wandb_run.py:_footer_sync_info():3937] logging synced files
