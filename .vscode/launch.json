@@ -5,17 +5,14 @@
     "version": "0.2.0",
     "configurations": [
 
-
-
-
         {
-          "name": "Debug train_kf.py",
+          "name": "Debug train_lr.py",
           "type": "debugpy",
           "request": "launch",
-          "program": "${workspaceFolder}/train_kf.py",
+          "program": "${workspaceFolder}/train/train_lr.py",
           "console": "integratedTerminal",
           "justMyCode": true,
-          "cwd": "${workspaceFolder}",
+          "cwd": "/home/xulei/xulei/dataset-distillation/Epilepsy",
         },
         {
           "name": "Debug trainlo.py",

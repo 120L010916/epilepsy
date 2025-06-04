@@ -6,7 +6,9 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 from torch.utils.data import TensorDataset, DataLoader, Subset
-from models.CNN import SeizureResNet,  SeizureCNN_TH, SeizureCNN
+from models.CNN import CNN_Simple, SeizureCNN, SeizureCNN1D
+from sklearn.metrics import precision_recall_curve
+from models.MLP import SeizureMLP
 # import wandb
 from sklearn.model_selection import KFold
 from utils.train_utils import  load_data, kalman_smooth, evaluate_metrics, EarlyStopping
@@ -42,7 +44,7 @@ def train(model, dataloader, criterion, optimizer, device):
     return avg_loss, acc, current_lr
 
 
-def evaluate(model, dataloader, device, use_kalman=True):
+def evaluate(model, dataloader, device, use_kalman=False):
     model.eval()
     y_true, y_pred, y_prob = [], [], []
 
@@ -53,26 +55,33 @@ def evaluate(model, dataloader, device, use_kalman=True):
             probs = torch.softmax(outputs, dim=1)[:, 1]  # 只取每个样本属于类别1的概率值（即正类概率）。
             y_true.extend(labels.cpu().numpy())
             y_prob.extend(probs.cpu().numpy())
-
+            precision, recall, thresholds = precision_recall_curve(y_true, y_prob)
+            f1_scores = 2 * (precision * recall) / (precision + recall + 1e-8)  # 避免除 0
+            best_idx = f1_scores.argmax()
+            best_threshold = thresholds[best_idx]
+            if not use_kalman:
+                preds = (probs > best_threshold).long()  # 二值化预测
+                y_pred.extend(preds.cpu().numpy())
+                
     y_true = np.array(y_true)
     y_prob = np.array(y_prob)
 
     # 🎯 卡尔曼滤波（可选）
     if use_kalman:
-        y_pred = kalman_smooth(y_prob)
+        y_pred = kalman_smooth(y_prob, threshold=best_threshold, T=5)
     else:
         # 二值预测
-        y_pred = (y_prob > 0.5).astype(int)
+        y_pred = np.array(y_pred)
 
     return y_true, y_pred, y_prob
 
-
-def train_one_patient(args, input_file):
+def train_one_patient(args, input_file, target_val_acc=0.80, max_epochs=200):
     print(f"\n🔍 正在处理文件: {input_file}")
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    X, y = load_data(input_file)  # 假设返回的是 seizure-level 样本
-
+    X, y = load_data(input_file)
+   
     dataset = TensorDataset(X, y)
+    use_kalman = True  # 是否使用卡尔曼滤波
     kf = KFold(n_splits=args.k_folds, shuffle=True, random_state=42)
 
     metrics_list = []
@@ -86,52 +95,41 @@ def train_one_patient(args, input_file):
         model = SeizureCNN().to(device)
         optimizer = optim.Adam(model.parameters(), lr=args.lr)
         criterion = nn.CrossEntropyLoss()
-        # scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=20, gamma=0.5)
-        # early_stopping = EarlyStopping(patience=80) 
-        # wandb.watch(model, log="all", log_freq=10)
-
+        early_stopping = EarlyStopping(patience=15)
         for epoch in range(args.epochs):
             train_loss, train_acc, lr = train(model, train_loader, criterion, optimizer, device)
-            y_true, y_pred, y_prob = evaluate(model, val_loader, device)
+            y_true, y_pred, y_prob = evaluate(model, val_loader, device, use_kalman=use_kalman)
             metrics = evaluate_metrics(y_true, y_pred, y_prob)
-            # val_sens = metrics.get('sensitivity', 0.0)  # 可选择其他指标
-            val_acc = metrics.get('accuracy', 0.0)
-            # early_stopping(val_acc)  # 使用综合指标进行早停
+            val_acc = metrics.get('accuracy', 0.0)  # 可选择其他指标
+            early_stopping(val_acc)  # 使用综合指标进行早停
 
-            print(f"Epoch {epoch+1}/{args.epochs} | Train Loss: {train_loss:.4f} | Train Acc: {train_acc:.4f} | Val Acc: {val_acc:.4f}")
+            # print(f"Epoch {epoch+1}/{args.epochs} | Train Loss: {train_loss:.4f} | Train Acc: {train_acc:.4f} | Val Acc: {val_acc:.4f}")
 
-            # if early_stopping.early_stop:
-            #     print(f"🛑 Early stopping triggered at epoch {epoch+1}")
-            #     break
+            if early_stopping.early_stop:
+                print(f"🛑 Early stopping triggered at epoch {epoch+1}")
+                break
             # scheduler.step()
-
-        # 只在最佳模型上评估验证集
-        # model.load_state_dict(early_stopping.best_model_state)
-        y_true, y_pred, y_prob = evaluate(model, val_loader, device)
+       
+        # 最终再评估一次模型
+        y_true, y_pred, y_prob = evaluate(model, val_loader, device, use_kalman=use_kalman)
         metrics = evaluate_metrics(y_true, y_pred, y_prob)
 
         for k, v in metrics.items():
             print(f"{k}: {v:.4f}")
 
-        # wandb.log({
-        #     "fold": fold + 1,
-        #     **metrics
-        # })
-
-        print(f"Epoch {args.epochs} | Train Loss: {train_loss:.4f} | Train Acc: {train_acc:.4f} | LR: {lr:.6f}")
         metrics_list.append(metrics)
 
-    # 平均每个 fold 的指标
-    avg_metrics = {}
-    for key in metrics_list[0].keys():
-        avg_metrics[f"avg_{key}"] = np.mean([m[key] for m in metrics_list])
-
-    # wandb.log(avg_metrics)
+    # 汇总所有 fold 的平均结果
+    avg_metrics = {
+        f"avg_{k}": np.mean([m[k] for m in metrics_list])
+        for k in metrics_list[0]
+    }
 
     for k, v in avg_metrics.items():
         print(f"{k}: {v:.4f}")
 
     return avg_metrics
+
 
 def main(args):
     all_avg_metrics = defaultdict(list)  # 用于存储每个患者的平均 metrics
@@ -142,7 +140,7 @@ def main(args):
     #     name="CrossPatientValidation"
     # )
 
-    for i in range(2, 3):  # chb01 to chb23
+    for i in range(1, 24):  # chb01 to chb23
         subj_id = f"chb{i:02d}"
         input_file = os.path.join(args.input_dir, subj_id, "features.npz")
         if os.path.exists(input_file):
@@ -166,7 +164,7 @@ if __name__ == "__main__":
     parser.add_argument('--input_dir', type=str, default='data/features/', help='Directory containing .npz files')
     parser.add_argument('--epochs', type=int, default=200, help='Number of training epochs')
     parser.add_argument('--batch_size', type=int, default=512, help='Training batch size')
-    parser.add_argument('--lr', type=float, default=0.001, help='Learning rate')
+    parser.add_argument('--lr', type=float, default=0.0005, help='Learning rate')
     parser.add_argument('--k_folds', type=int, default=2, help='Number of folds for K-Fold cross-validation')
     
     args = parser.parse_args()

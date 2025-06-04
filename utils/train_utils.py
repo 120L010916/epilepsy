@@ -80,7 +80,7 @@ def evaluate_metrics(y_true, y_pred, y_prob=None):
 
     return metrics
 
-def kalman_smooth(pred_probs, threshold=0.5, T=5):
+def kalman_smooth(pred_probs, threshold=0.5, T=3):
     """
     pred_probs: numpy array of predicted probabilities (for class 1: pre-ictal)
     threshold: threshold for binarizing predictions (default=0.8)
@@ -97,7 +97,7 @@ def kalman_smooth(pred_probs, threshold=0.5, T=5):
 
     for i in range(T - 1, len(bin_pred)):
         window = bin_pred[i - T + 1:i + 1]
-        if np.sum(window) == T:  # 所有 T 个窗口都为 1，则触发报警
+        if np.sum(window) >= T-1:  # 所有 T 个窗口都为 1，则触发报警
             alarm_output[i] = 1
 
     return alarm_output
