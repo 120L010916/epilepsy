@@ -133,13 +133,4 @@ epilepsy_prediction/
 ├── evaluate.py                  # 评估指标计算
 ├── config.yaml                  # 超参数配置
 └── README.md
-```
 
----
-
-下一步建议我可以为你写出：
-
-* ✅ `train.py` 主框架
-* ✅ `cnn.py` 模型构建代码
-* ✅ `csp.py` 特征提取器实现（NumPy）
-  你希望我先从哪一部分开始写？或者是否先搭建一个最小可运行框架？
